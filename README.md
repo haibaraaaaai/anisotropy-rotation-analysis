@@ -2,6 +2,8 @@
 
 This repository is the active workspace for anisotropy orientation and rotation analysis.
 
+Licensed under the MIT License. See `LICENSE`.
+
 ## Current notebooks
 
 - `anisotropy_rotation_processing.ipynb` - Main processing workflow used for data analysis.
