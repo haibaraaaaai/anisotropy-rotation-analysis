@@ -329,7 +329,7 @@ class CorrectionTab(QWidget):
         self.na_out_spin.setEnabled(use_hole)
 
     def _current_fourkas_coeffs(self):
-        """Compute current Fourkas coefficients from selected calibration mode."""
+        """Compute current anisotropy-rotation coefficients from selected calibration mode."""
         n = self.n_spin.value()
         if self.hole_chk.isChecked():
             na_in = self.na_in_spin.value()

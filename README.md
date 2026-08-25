@@ -1,26 +1,41 @@
 # anisotropy-rotation-analysis
 
-This repository contains focused analysis assets for anisotropy orientation and rotation analysis. It is intended to be the active analysis workspace extracted from `pyqtrod`.
+This repository is the active workspace for anisotropy orientation and rotation analysis.
 
-## Scope
+## Current notebooks
 
-The scope is thesis-relevant anisotropy orientation/rotation analysis workflows, calibration notebooks, simulation notebooks, and supporting investigation notes/scripts.
+- `anisotropy_rotation_processing.ipynb` - Main processing workflow used for data analysis.
+- `anisotropy_rotation_simulation.ipynb` - Forward model and geometry/signal simulation notebook.
+- `anisotropy_rotation_theta_r_model.ipynb` - Theta/r deviation modeling and mechanism testing notebook.
 
-## Contents
+## Current package and data
 
-- `fourkas_gui/` - GUI-related assets used in Fourkas-oriented analysis workflows.
-- `investigation_hugh_theta_r/` - Investigation materials related to theta/r analysis.
-- `Fourkas_NA_calibration.ipynb` - Numerical aperture calibration notebook.
-- `Fourkas_a_calibration.ipynb` - Parameter `a` calibration notebook.
-- `Fourkas_processing_v3_diagonsis.ipynb` - Processing v3 diagnosis notebook.
-- `Fourkas_processing_v4.ipynb` - Processing v4 notebook.
-- `Fourkas_simulation.ipynb` - Simulation notebook.
-- `diagnostics_summary.md` - Diagnostic summary notes.
-- `file6_resurrection_findings.md` - Findings document for file6 resurrection work.
-- `notes.md` - General working notes.
-- `stator_dynamics_findings.md` - Findings on stator dynamics.
-- `speed_explorer.py` - Script for speed exploration.
+- `anisotropy_rotation_gui/` - Early GUI prototype derived from the processing workflow.
+- `data/` - Input TDMS and related raw data files.
+- `requirements.txt` - Python dependencies for notebook and analysis execution.
+
+## GUI status
+
+The GUI prototype is currently on hold.
+
+Why:
+- The processing algorithms are still evolving quickly, so GUI behavior would churn frequently.
+- Notebook iteration is currently faster and simpler for method development and diagnostics.
+
+Plan:
+- Keep the GUI code as a reference prototype.
+- Resume GUI work after the core processing path stabilizes.
 
 ## Status
 
-This is the active analysis repository. `pyqtrod` remains as legacy, upstream-derived context during migration.
+This repository is actively used for notebook-first analysis and method development.
+
+## Current modeling direction
+
+Decision log (2026-08-25): prioritize interference as the primary mechanism behind theta-r distortion in upcoming iterations.
+
+Latest internal results indicate the dominant contributor to the observed theta-r curve distortion is interference, rather than pure background alone.
+
+Near-term iteration focus:
+- Prioritize interference-focused modeling and validation.
+- Treat background-only tuning as secondary support work.

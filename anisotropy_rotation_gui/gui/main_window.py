@@ -43,14 +43,14 @@ class MplCanvas(FigureCanvas):
 class MainWindow(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Fourkas Processing")
+        self.setWindowTitle("Anisotropy Rotation Processing")
         self.resize(1500, 700)
 
         # Data state
         self._raw = None       # dict from load_tdms
         self._cycle = None     # (cyc_start, cyc_end) in decimated indices
 
-        self._settings = QSettings("FourkasGUI", "FourkasProcessing")
+        self._settings = QSettings("AnisotropyRotationGUI", "AnisotropyRotationProcessing")
 
         self._build_ui()
         self._connect_signals()

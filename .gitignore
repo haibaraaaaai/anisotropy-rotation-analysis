@@ -3,21 +3,29 @@ __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
 
 # Virtual environments
 .venv/
 venv/
 env/
+.conda/
 
 # Jupyter
 .ipynb_checkpoints/
 
-# Analysis outputs
-*.log
-*.tmp
-*.cache
-*.png
-*.pdf
+# Data (usually large, not committed)
+data/
 
-# OS/editor
+# Analysis outputs
+results/
+
+# OS / editor
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

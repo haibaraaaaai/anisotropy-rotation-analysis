@@ -110,11 +110,11 @@ def apply_correction(c0, c90, c45, c135, a, o, matcor):
 
 
 # ═════════════════════════════════════════════════════════════════════════════
-# Fourkas model
+# anisotropy-rotation model
 # ═════════════════════════════════════════════════════════════════════════════
 
 def fourkas_ABC(alpha):
-    """Compute Fourkas A, B, C coefficients from collection half-angle alpha (rad)."""
+    """Compute anisotropy-rotation A, B, C coefficients from collection half-angle alpha (rad)."""
     ca = np.cos(alpha)
     A = 1/6 - ca/4 + (ca**3)/12
     B = ca/8 - (ca**3)/8
@@ -123,7 +123,7 @@ def fourkas_ABC(alpha):
 
 
 def fourkas_ABC_annular(na_in, na_out, n_water=1.33):
-    """Compute Fourkas A, B, C for annular (hole) collection.
+    """Compute anisotropy-rotation A, B, C for annular (hole) collection.
 
     Parameters
     ----------
@@ -174,7 +174,7 @@ def fourkas_template(Theta_ax, Phi_ax, Lambda, A, B, C, n_pts=200):
     Theta_ax : float — polar angle of rotation axis (rad)
     Phi_ax   : float — azimuthal angle of rotation axis (rad)
     Lambda   : float — cone half-angle (rad)
-    A, B, C  : Fourkas coefficients
+    A, B, C  : anisotropy-rotation coefficients
     n_pts    : number of points around the cone
 
     Returns
@@ -241,7 +241,7 @@ def shape_fit_cost(params, tcor_sub, A, B, C, n_model=200):
     ----------
     params : [Theta_ax_deg, Phi_ax_deg, Lambda_deg, dc, fa, fb]
     tcor_sub : (4, N) T-corrected channels at subsampled points (stack order)
-    A, B, C : Fourkas coefficients
+    A, B, C : anisotropy-rotation coefficients
 
     Returns
     -------
@@ -315,7 +315,7 @@ def run_shape_fit(tcor_sub, NA, n_water=1.33, n_outer=4, popsize=15,
         cost : final cost
         ax_data, ay_data : corrected anisotropy of data
         ax_model, ay_model : best-fit model curve
-        A, B, C, R_sat : Fourkas coefficients
+        A, B, C, R_sat : anisotropy-rotation coefficients
     """
     if (A_override is not None
             and B_override is not None
@@ -463,7 +463,7 @@ def extract_theta_phi(ax, ay, A, B, C):
     Parameters
     ----------
     ax, ay : 1-D arrays — anisotropy
-    A, B, C : Fourkas coefficients
+    A, B, C : anisotropy-rotation coefficients
 
     Returns
     -------

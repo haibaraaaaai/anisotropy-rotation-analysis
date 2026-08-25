@@ -1,4 +1,4 @@
-"""Entry point: python -m fourkas_gui"""
+"""Entry point: python -m anisotropy_rotation_gui"""
 
 import sys
 from PyQt6.QtWidgets import QApplication
