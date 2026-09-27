@@ -1,0 +1,103 @@
+{
+  "created_local": "2026-09-18 15:22:58",
+  "recording_type": "fetch_frames",
+  "npy_file": "frame_stack_20260918-152256.npy",
+  "npy_path": "C:\\Polarcam Software\\Polarcam_v3\\polarcam_live\\datasets\\attempt240nmsoundonbuffer\\frame_stack_20260918-152256.npy",
+  "sound": {
+    "sound_on": false,
+    "source": "manual_gui_checkbox"
+  },
+  "requested": {
+    "fps": 72.175,
+    "exp_ms": 0.6,
+    "gain_analog": 1.0,
+    "gain_digital": 1.0,
+    "frames": 150
+  },
+  "actual": {
+    "fps": 72.17540574282147,
+    "frames": 150,
+    "timing": {
+      "exposure_inc": 6.486486486486487,
+      "exposure_max": 1999998.5945945946,
+      "exposure_min": 20.216216216216218,
+      "exposure_us": 597.5135135135135,
+      "fps": 72.17540574282147,
+      "fps_inc": null,
+      "fps_max": 72.17540574282147,
+      "fps_min": 0.4999859463409677,
+      "fps_writable": true
+    },
+    "gains": {
+      "analog": {
+        "inc": null,
+        "max": 16.218101501464844,
+        "min": 1.0,
+        "val": 1.0
+      },
+      "digital": {
+        "inc": null,
+        "max": 15.99609375,
+        "min": 1.0,
+        "val": 1.0
+      }
+    },
+    "max_raw_value": 4094,
+    "max_saved_value": 4090,
+    "phase_marker_appended": true
+  },
+  "background": {
+    "background_subtract_requested": true,
+    "background_subtracted": true,
+    "background_profile_path": "C:\\Polarcam Software\\Polarcam_v3\\polarcam_live\\background_profile.npy",
+    "background_profile_file": "background_profile.npy"
+  },
+  "roi": {
+    "Height": 2056.0,
+    "OffsetX": 0.0,
+    "OffsetY": 0.0,
+    "Width": 2464.0
+  },
+  "rod_location": {},
+  "fetch_frames_output": {
+    "path": "C:\\Polarcam Software\\Polarcam_v3\\polarcam_live\\datasets\\attempt240nmsoundonbuffer\\frame_stack_20260918-152256.npy",
+    "actual_fps": 72.17540574282147,
+    "count": 150,
+    "roi": {
+      "Height": 2056.0,
+      "OffsetX": 0.0,
+      "OffsetY": 0.0,
+      "Width": 2464.0
+    },
+    "timing": {
+      "exposure_inc": 6.486486486486487,
+      "exposure_max": 1999998.5945945946,
+      "exposure_min": 20.216216216216218,
+      "exposure_us": 597.5135135135135,
+      "fps": 72.17540574282147,
+      "fps_inc": null,
+      "fps_max": 72.17540574282147,
+      "fps_min": 0.4999859463409677,
+      "fps_writable": true
+    },
+    "gains": {
+      "analog": {
+        "inc": null,
+        "max": 16.218101501464844,
+        "min": 1.0,
+        "val": 1.0
+      },
+      "digital": {
+        "inc": null,
+        "max": 15.99609375,
+        "min": 1.0,
+        "val": 1.0
+      }
+    },
+    "max_raw_value": 4094,
+    "max_saved_value": 4090,
+    "phase_marker_appended": true,
+    "background_profile_path": "C:\\Polarcam Software\\Polarcam_v3\\polarcam_live\\background_profile.npy",
+    "background_subtracted": true
+  }
+}
