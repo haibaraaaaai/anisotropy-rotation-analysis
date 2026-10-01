@@ -1,0 +1,3 @@
+1. isn't the fact that the changing slide height and see different signal shows that the background and interference couldn't have come from the reflection of the slide, or anything that's in that area since the phase diff shouldn't change? Then I guess it wouldn't make sense to apply fresnel and BFP mapping on the background / interference? So maybe the correct way is to do those two first then add background / interference?
+2. on BFP mapping, test to make sure if we remove oil and hole it recover precisely fourkas form.
+3. is there then a good reason to move the hole mirror up? Or something so it gets less sources of background?
