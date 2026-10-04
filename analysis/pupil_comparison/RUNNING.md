@@ -10,7 +10,7 @@ OPENBLAS_NUM_THREADS=1 python analysis/pupil_comparison/check_fine_grid.py --mas
 python analysis/pupil_comparison/verify_models.py
 ```
 
-Supply the mask from your local thesis checkout. Generated files go to the ignored `results/` subdirectory. No measured mask or data-derived result artifacts are included in this branch.
+Supply the mask from your local thesis checkout. Generated files go to the ignored `results/` subdirectory. Recorded results are in `report/`; see README.md. The measured mask is supplied separately.
 
 The restored notebook core runs through its speed overview. The archived step searches, optional interactive explorations and the later Allan comparison needing a separate fixed-rod TDMS are outside this core runner.
 

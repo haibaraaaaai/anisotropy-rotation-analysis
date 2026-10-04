@@ -1,0 +1,350 @@
+{
+  "fourkas_038": {
+    "best": {
+      "seed": 42,
+      "parameters": [
+        23.96860948745526,
+        -118.62745460432552,
+        48.4134846757538,
+        0.0997919763315906,
+        0.6575501929887786,
+        -0.9999999580948683
+      ],
+      "cost": 0.007644881898537812,
+      "DE_success": true,
+      "DE_message": "Optimization terminated successfully.",
+      "DE_iterations": 232,
+      "polish_success": true,
+      "background": [
+        0.08270510481357982,
+        0.01708687151801079,
+        2.090897955289232e-09,
+        0.09979197424069265
+      ]
+    },
+    "runs": [
+      {
+        "seed": 42,
+        "parameters": [
+          23.96860948745526,
+          -118.62745460432552,
+          48.4134846757538,
+          0.0997919763315906,
+          0.6575501929887786,
+          -0.9999999580948683
+        ],
+        "cost": 0.007644881898537812,
+        "DE_success": true,
+        "DE_message": "Optimization terminated successfully.",
+        "DE_iterations": 232,
+        "polish_success": true,
+        "background": [
+          0.08270510481357982,
+          0.01708687151801079,
+          2.090897955289232e-09,
+          0.09979197424069265
+        ]
+      },
+      {
+        "seed": 91,
+        "parameters": [
+          23.96890437793334,
+          -118.62743485703683,
+          48.41373309829207,
+          0.09979544259524549,
+          0.657492259634969,
+          -0.9999999922165245
+        ],
+        "cost": 0.007644881899335242,
+        "DE_success": true,
+        "DE_message": "Optimization terminated successfully.",
+        "DE_iterations": 247,
+        "polish_success": true,
+        "background": [
+          0.08270508682423264,
+          0.017090355771012845,
+          3.883776927609713e-10,
+          0.09979544220686778
+        ]
+      }
+    ],
+    "geometric_holdout": {
+      "fit_window": {
+        "valid_fraction": 1.0,
+        "median_distance": 0.06097224843846464,
+        "rms_distance": 0.09260062390992306
+      },
+      "held_out": {
+        "valid_fraction": 1.0,
+        "median_distance": 0.06494214330942572,
+        "rms_distance": 0.09916451722727002
+      }
+    },
+    "folded_theta_range_deg": [
+      24.44487518829856,
+      72.38209416320906
+    ],
+    "background_stokes_radius": 1.1968175184585652
+  },
+  "annulus_0.38": {
+    "best": {
+      "seed": 91,
+      "parameters": [
+        23.713085892695563,
+        -118.67489816906652,
+        48.254849163104225,
+        0.10014643389921708,
+        0.657661670290586,
+        -0.9999999581833234
+      ],
+      "cost": 0.007647609905735385,
+      "DE_success": true,
+      "DE_message": "Optimization terminated successfully.",
+      "DE_iterations": 245,
+      "polish_success": true,
+      "background": [
+        0.08300445244551098,
+        0.017141981453706108,
+        2.0938955177952575e-09,
+        0.10014643180532157
+      ]
+    },
+    "runs": [
+      {
+        "seed": 42,
+        "parameters": [
+          23.715693645049367,
+          61.76022403982367,
+          48.225954773064124,
+          0.09997118345135093,
+          0.6591332037490549,
+          -0.9999999400933621
+        ],
+        "cost": 0.0076493379151465505,
+        "DE_success": true,
+        "DE_message": "Optimization terminated successfully.",
+        "DE_iterations": 234,
+        "polish_success": true,
+        "background": [
+          0.08293275494111219,
+          0.017038428510238745,
+          2.9944687423569983e-09,
+          0.09997118045688219
+        ]
+      },
+      {
+        "seed": 91,
+        "parameters": [
+          23.713085892695563,
+          -118.67489816906652,
+          48.254849163104225,
+          0.10014643389921708,
+          0.657661670290586,
+          -0.9999999581833234
+        ],
+        "cost": 0.007647609905735385,
+        "DE_success": true,
+        "DE_message": "Optimization terminated successfully.",
+        "DE_iterations": 245,
+        "polish_success": true,
+        "background": [
+          0.08300445244551098,
+          0.017141981453706108,
+          2.0938955177952575e-09,
+          0.10014643180532157
+        ]
+      }
+    ],
+    "geometric_holdout": {
+      "fit_window": {
+        "valid_fraction": 1.0,
+        "median_distance": 0.060942849824989105,
+        "rms_distance": 0.09265823013231317
+      },
+      "held_out": {
+        "valid_fraction": 1.0,
+        "median_distance": 0.06501467465085248,
+        "rms_distance": 0.09925032440872027
+      }
+    },
+    "folded_theta_range_deg": [
+      24.54176327040865,
+      71.9679350557998
+    ],
+    "background_stokes_radius": 1.1968787695234853
+  },
+  "mask_0": {
+    "best": {
+      "seed": 42,
+      "parameters": [
+        23.67441778638459,
+        -118.22076712003336,
+        48.24457843668032,
+        0.09991908642320843,
+        0.65898659282976,
+        -0.9999999995764116
+      ],
+      "cost": 0.007637780136550242,
+      "DE_success": true,
+      "DE_message": "Optimization terminated successfully.",
+      "DE_iterations": 265,
+      "polish_success": true,
+      "background": [
+        0.08288221237195044,
+        0.017036874051257988,
+        2.11622823037192e-11,
+        0.09991908640204615
+      ]
+    },
+    "runs": [
+      {
+        "seed": 42,
+        "parameters": [
+          23.67441778638459,
+          -118.22076712003336,
+          48.24457843668032,
+          0.09991908642320843,
+          0.65898659282976,
+          -0.9999999995764116
+        ],
+        "cost": 0.007637780136550242,
+        "DE_success": true,
+        "DE_message": "Optimization terminated successfully.",
+        "DE_iterations": 265,
+        "polish_success": true,
+        "background": [
+          0.08288221237195044,
+          0.017036874051257988,
+          2.11622823037192e-11,
+          0.09991908640204615
+        ]
+      },
+      {
+        "seed": 91,
+        "parameters": [
+          23.67417475770851,
+          -118.22081801520403,
+          48.24462785063214,
+          0.09992090905442844,
+          0.6589557140287541,
+          -0.9999999731880396
+        ],
+        "cost": 0.00763778015168179,
+        "DE_success": true,
+        "DE_message": "Optimization terminated successfully.",
+        "DE_iterations": 265,
+        "polish_success": true,
+        "background": [
+          0.08288218151339576,
+          0.017038727541032674,
+          1.3395377298305052e-09,
+          0.0999209077148907
+        ]
+      }
+    ],
+    "geometric_holdout": {
+      "fit_window": {
+        "valid_fraction": 1.0,
+        "median_distance": 0.0622186461399418,
+        "rms_distance": 0.09257504107748094
+      },
+      "held_out": {
+        "valid_fraction": 1.0,
+        "median_distance": 0.06520982751778415,
+        "rms_distance": 0.09916651888217182
+      }
+    },
+    "folded_theta_range_deg": [
+      24.57016065029574,
+      71.91899622306491
+    ],
+    "background_stokes_radius": 1.1976073349316958
+  },
+  "annulus_0.39": {
+    "best": {
+      "seed": 42,
+      "parameters": [
+        23.722287190782804,
+        61.31064109450665,
+        48.31431026489315,
+        0.10015789388835315,
+        0.6576356627182113,
+        -0.9999999400933621
+      ],
+      "cost": 0.007648836289958672,
+      "DE_success": true,
+      "DE_message": "Optimization terminated successfully.",
+      "DE_iterations": 235,
+      "polish_success": true,
+      "background": [
+        0.08301264840604029,
+        0.017145245482312874,
+        3.0000613396252606e-09,
+        0.10015789088829181
+      ]
+    },
+    "runs": [
+      {
+        "seed": 42,
+        "parameters": [
+          23.722287190782804,
+          61.31064109450665,
+          48.31431026489315,
+          0.10015789388835315,
+          0.6576356627182113,
+          -0.9999999400933621
+        ],
+        "cost": 0.007648836289958672,
+        "DE_success": true,
+        "DE_message": "Optimization terminated successfully.",
+        "DE_iterations": 235,
+        "polish_success": true,
+        "background": [
+          0.08301264840604029,
+          0.017145245482312874,
+          3.0000613396252606e-09,
+          0.10015789088829181
+        ]
+      },
+      {
+        "seed": 91,
+        "parameters": [
+          23.72385426928684,
+          61.74579409212275,
+          48.28539930530104,
+          0.09998242293545821,
+          0.6590935048082586,
+          -0.9999999400933621
+        ],
+        "cost": 0.0076493300172953875,
+        "DE_success": true,
+        "DE_message": "Optimization terminated successfully.",
+        "DE_iterations": 274,
+        "polish_success": true,
+        "background": [
+          0.0829400942436055,
+          0.017042328691852723,
+          2.994805402209143e-09,
+          0.09998241994065281
+        ]
+      }
+    ],
+    "geometric_holdout": {
+      "fit_window": {
+        "valid_fraction": 1.0,
+        "median_distance": 0.06103918741466204,
+        "rms_distance": 0.09266265968870736
+      },
+      "held_out": {
+        "valid_fraction": 1.0,
+        "median_distance": 0.06501743623332432,
+        "rms_distance": 0.09925517353940361
+      }
+    },
+    "folded_theta_range_deg": [
+      24.592023074110323,
+      72.03659745567596
+    ],
+    "background_stokes_radius": 1.1968644639496775
+  }
+}

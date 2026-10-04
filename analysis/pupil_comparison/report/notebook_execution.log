@@ -1,0 +1,168 @@
+Executing cell 4
+
+Cell 4 completed in 0.2s
+Executing cell 6
+
+Cell 6 completed in 0.0s
+Executing cell 9
+Output folder: results/files3_first40s
+Relative name: files3_first40s.tdms
+File : files3_first40s.tdms
+Exists: True
+T-matrix correction: ON
+
+Cell 9 completed in 0.0s
+Executing cell 11
+Loaded: files3_first40s.tdms
+  10,000,000 points  |  250000 Hz  |  duration: 40.0 s
+
+Cell 11 completed in 1.0s
+Executing cell 13
+Fit window: 250000 decimated samples, t = 30.000 – 31.000 s
+[Option B] SCMS: kept 3000/3000 ridge pts  (h=0.02, iters=25)
+[Option B] connectivity: 708 comps, top sizes=[490, 137, 73, 72, 53], kept 1945/3000 (radius=0.01, min_size=6)
+
+Cell 13 completed in 50.4s
+Executing cell 15
+[Option B] cycle window: [0, 9380]  (9380 samples / 250000)
+Manual cycle indices: [0, 700] (700 samples). Slider skipped.
+
+Cell 15 completed in 2.6s
+Executing cell 17
+[Option B] Savgol smoothing: window=201 samples, order=3
+[Option B] merged track: 480 pts (spline -> snapped to SCMS ridge)
+[Option B] post-smooth: Savgol win=51, spline s=0.05 -> 480 pts
+
+Cell 17 completed in 1.2s
+Executing cell 19
+Phase-matching for shape fitting:
+  source: merged track
+  N phase points: 90
+  phase parameterization: one full 0..2pi turn on the selected merged trajectory
+  matched unique raw points: 90/90
+  distance: mean=0.0009, max=0.0027
+  fit arrays rebuilt: 90 points (phase-ordered)
+
+Cell 19 completed in 1.9s
+Executing cell 21
+Channel correction: computed a = ['1.0083', '1.2804', '1.0917', '1.0000']
+Gain   a = ['1.008', '1.28', '1.092', '1']
+Gain + T-matrix applied to fit segment (90 pts).
+
+Cell 21 completed in 0.0s
+Executing cell 23
+Hole correction ON  (NA_in=0.38, NA_out=1.3, n=1.33)
+alpha_in=16.6015°  alpha_out=77.8075°
+A_out=0.114653  B_out=0.025222  C_out=0.129650
+A_in =0.000428  B_in =0.009779  C_in =0.010206
+A=0.114224  B=0.015443  C=0.119444
+r_sat = 0.92116
+
+Cell 23 completed in 0.0s
+Executing cell 25
+Fit channel data for shape fitting: 90 points
+Model phase domain: fourkas_template uses psi in [0, 2pi) for each evaluation (N_model=720 in fit).
+δc upper bound: 0.2016
+
+Running 4-iteration alternating optimization:
+  Stage 1: DE on (Θ, Φ, Λ) with background fixed
+  Stage 2: DE on (δc, fa, fb) with geometry fixed
+
+======================================================================
+Outer iteration 1/4
+======================================================================
+  Stage 1: fit (Θ, Φ, Λ) | fixed δc=0.0000, fa=0.0000, fb=0.0000
+    → Θ=61.82°  Φ=62.20°  Λ=72.37°  cost=0.03753
+  Stage 2: fit (δc, fa, fb) | fixed Θ=61.82°, Φ=62.20°, Λ=72.37°
+    → δc=0.0515  fa=-0.2926  fb=0.0819  cost=0.0254
+======================================================================
+Outer iteration 2/4
+======================================================================
+  Stage 1: fit (Θ, Φ, Λ) | fixed δc=0.0515, fa=-0.2926, fb=0.0819
+    → Θ=60.53°  Φ=-118.32°  Λ=71.45°  cost=0.02432
+  Stage 2: fit (δc, fa, fb) | fixed Θ=60.53°, Φ=-118.32°, Λ=71.45°
+    → δc=0.0677  fa=-0.0670  fb=-0.0595  cost=0.02377
+======================================================================
+Outer iteration 3/4
+======================================================================
+  Stage 1: fit (Θ, Φ, Λ) | fixed δc=0.0677, fa=-0.0670, fb=-0.0595
+    → Θ=58.73°  Φ=-118.65°  Λ=70.95°  cost=0.02321
+  Stage 2: fit (δc, fa, fb) | fixed Θ=58.73°, Φ=-118.65°, Λ=70.95°
+    → δc=0.0848  fa=0.0508  fb=-0.1439  cost=0.02264
+======================================================================
+Outer iteration 4/4
+======================================================================
+  Stage 1: fit (Θ, Φ, Λ) | fixed δc=0.0848, fa=0.0508, fb=-0.1439
+    → Θ=56.78°  Φ=61.43°  Λ=70.35°  cost=0.02205
+  Stage 2: fit (δc, fa, fb) | fixed Θ=56.78°, Φ=61.43°, Λ=70.35°
+    → δc=0.1017  fa=0.1165  fb=-0.2076  cost=0.02141
+
+Final fit:
+Θ_axis = 56.780°
+Φ_axis = 61.429°
+Λ      = 70.351°
+δc     = 0.101700
+fa     = 0.116454
+fb     = -0.207639
+Cost   = 0.0214077
+
+Derived channel backgrounds:
+b0   = 0.056772
+b90  = 0.044928
+b45  = 0.040292
+b135 = 0.061408
+
+Historical inverse-Hessian curvature diagnostic (NOT calibrated 1-sigma uncertainties):
+σ(Θ_axis) = 0.0002632
+σ(Φ_axis) = 0.0002632
+σ(Λ)      = 0.0002632
+σ(δc)     = 0.5863
+σ(fa)     = 3.261
+σ(fb)     = 3.111
+
+Cell 25 completed in 8.6s
+Executing cell 27
+Raw points available: 10,000,000
+Processed points after window: 10,000,000 (window=None..None s)
+Phase-tracking points used: 1,000,000 (decimation=10x, fs_eff=25000.0 Hz)
+Template phase points (one turn): 360
+Continuity window: +/-58 idx  (expected max step ~28.8 idx @ 2000 Hz; branch sep ~180)
+Observed max |step|: 59.00 idx; window-saturated samples: 6221 (0.62%)
+Generated phase samples: 1,000,000
+psi (rotation-frame): min=-68380.5227  max=2.7664 rad
+RECONSTRUCT_LAB_ANGLES=False
+theta_lab / phi_lab: not reconstructed (speed-only); psi is the primary output.
+Trajectory guard: OFF
+Background/signal ratios:
+  representative = |b|/median(c), range = [|b|/max(c), |b|/min(c)
+  c0:   rep=0.16819  range=[np.float64(0.08504213248624336), np.float64(0.6865313275065472)]
+  c90:  rep=0.23505  range=[np.float64(0.06137069527978576), np.float64(0.6753173773560801)]
+  c45:  rep=0.20375  range=[np.float64(0.05414661054689538), np.float64(0.5476710790550505)]
+  c135: rep=0.17925  range=[np.float64(0.09637166746765202), np.float64(0.5958329950426932)]
+
+Cell 27 completed in 16.1s
+Executing cell 29
+file      : files3_first40s.tdms
+duration  : 0.0–40.0 s  (40.0 s), 1,000,000 pts @ 25000 Hz
+rotating  : [(0.1, 39.9)]
+stopped   : []
+CLEAN_ROT : (0.1, 39.9)
+toolkit ready: speed_at_dt · detect_regions · fit_steps · omega_adev · track_psi_segment
+
+Cell 29 completed in 0.1s
+Executing cell 35
+Saved: 01_anisotropy_shape.png
+
+Cell 35 completed in 0.8s
+Executing cell 36
+saved: results/files3_first40s/02_speed_from_psi.png
+|speed| over file: median=278.6 Hz, max=372.8 Hz
+rotating regions : [(0.1, 39.9)]
+
+Cell 36 completed in 0.7s
+Executing cell 37
+saved: results/files3_first40s/03_speed_histogram.png
+KDE peaks (Hz): [292.6]
+
+Cell 37 completed in 0.3s
+Core execution complete.
