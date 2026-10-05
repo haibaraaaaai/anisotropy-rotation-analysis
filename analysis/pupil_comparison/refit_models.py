@@ -83,7 +83,7 @@ for ax,(key,p) in zip(axs,fits.items()):
     pp=points(p);mm=xy(models[key],cone(*p[:3],n=3000))
     ax.scatter(pp[:,0],pp[:,1],c=np.arange(len(pp)),cmap='hsv',s=12,label='same 90 selected points')
     ax.plot(mm[:,0],mm[:,1],'k-',lw=1,label='fitted cone')
-    ax.set(aspect='equal',xlabel='X',ylabel='Y',title=key+'\ncost %.5g'%results[key]['best']['cost'])
+    ax.set(xlim=(-1,1),ylim=(-1,1),aspect='equal',xlabel='X',ylabel='Y',title=key+'\ncost %.5g'%results[key]['best']['cost'])
 axs[0].legend(fontsize=7);fig.savefig(out/'real_data_refits.png',dpi=160);plt.close(fig)
 
 # At fixed historical geometry, compare optical changes to residual scale.

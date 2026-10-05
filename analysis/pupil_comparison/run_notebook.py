@@ -71,7 +71,11 @@ for i in selected:
                       retained_fit_samples=int(np.all(fit-b[:,None]>0,axis=0).sum()),
                       fit_samples=fit.shape[1], unique_matched_samples=int(env['_n_unique']))
         (OUT/'baseline.json').write_text(json.dumps(result,indent=2)+'\n')
-        np.savez_compressed(OUT/'fit_channels.npz', channels=fit, backgrounds=b,
+        provenance = ({'bin_bounds': env['_fit_bin_bounds'], 'bin_counts': env['_fit_sample_counts']}
+                      if env.get('PREFIT_METHOD') == 'time_ordered' else {})
+        result['prefit_method'] = env.get('PREFIT_METHOD', 'legacy_ridge')
+        (OUT/'baseline.json').write_text(json.dumps(result,indent=2)+'\n')
+        np.savez_compressed(OUT/'fit_channels.npz', **provenance, channels=fit, backgrounds=b,
                             raw_fit=np.array([env[x] for x in ['c0_fit','c90_fit','c45_fit','c135_fit']]),
                             matched_indices=env['_matched_idx'])
     if i == 27:
