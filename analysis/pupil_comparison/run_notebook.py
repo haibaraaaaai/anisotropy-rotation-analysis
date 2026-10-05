@@ -7,10 +7,12 @@ import contextlib
 import io
 import json
 import os
+import sys
 from pathlib import Path
 import time
 import traceback
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 os.environ.setdefault('MPLBACKEND', 'Agg')
 import matplotlib.pyplot as plt
 import nbformat
@@ -62,6 +64,10 @@ for i in selected:
                       optimizer_message=str(env['shape_fit_res'].message), background=b.tolist(),
                       inverse_gains_stack_90_45_135_0=list(env['a']),
                       ABC=[float(env[k]) for k in ['A_cal','B_cal','C_cal']],
+                      collection_model=dict(fresnel_bfp=env['USE_FRESNEL_BFP'],
+                                            hole=env['USE_HOLE_CORRECTION'],
+                                            na_in=env['NA_in'], na_out=env['NA_out'],
+                                            n_sample=env['nw'], n_immersion=env['n_oil']),
                       retained_fit_samples=int(np.all(fit-b[:,None]>0,axis=0).sum()),
                       fit_samples=fit.shape[1], unique_matched_samples=int(env['_n_unique']))
         (OUT/'baseline.json').write_text(json.dumps(result,indent=2)+'\n')
