@@ -1,0 +1,40 @@
+{
+  "interval_samples": [
+    0,
+    700
+  ],
+  "interval_duration_s": 0.002799999999999992,
+  "legacy_selected_max_y": 0.38981341401916286,
+  "legacy_match_time_range_s": [
+    0.0038279999999999894,
+    0.9758719999999973
+  ],
+  "legacy_time_backsteps": 39,
+  "legacy_201_wrap_max_y": 0.3193345446711948,
+  "new_selected_max_y": 0.5381430850834448,
+  "new_min_max_bin_counts": [
+    2,
+    20
+  ],
+  "endpoint_gap": 0.09444486670788861,
+  "open_arc_length": 6.894820339754021,
+  "all_700_samples_used_once": true,
+  "smoothing_sensitivity": {
+    "21": {
+      "max_y": 0.5352787456445993,
+      "endpoint_gap": 0.09416803339279319
+    },
+    "41": {
+      "max_y": 0.5381430850834448,
+      "endpoint_gap": 0.09444486670788861
+    },
+    "81": {
+      "max_y": 0.5384506343468707,
+      "endpoint_gap": 0.14028593524936891
+    },
+    "201": {
+      "max_y": 0.5377581120943954,
+      "endpoint_gap": 0.12262655121654885
+    }
+  }
+}

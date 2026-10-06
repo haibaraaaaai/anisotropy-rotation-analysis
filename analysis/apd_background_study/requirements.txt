@@ -1,0 +1,9 @@
+numpy
+scipy
+matplotlib
+Pillow
+reportlab
+python-docx
+npTDMS
+IPython
+nbformat

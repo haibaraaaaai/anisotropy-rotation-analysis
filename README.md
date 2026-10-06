@@ -56,3 +56,7 @@ Latest internal results indicate the dominant contributor to the observed theta-
 Near-term iteration focus:
 - Prioritize interference-focused modeling and validation.
 - Treat background-only tuning as secondary support work.
+
+## APD background/interference study (6 October 2026)
+
+The [study milestone](analysis/apd_background_study/README.md) contains the trajectory audit, saved fits, background/angle comparison figures, and reproducible meeting-report generators. It preserves the audited pre-fit notebook as a separate snapshot and leaves this repository’s main processing notebook unchanged.

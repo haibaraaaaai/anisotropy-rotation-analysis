@@ -1,0 +1,382 @@
+{
+  "30s": {
+    "plus_wide": {
+      "test": {
+        "xy_rms": 0.03166522741120187,
+        "channel_rms": 0.005984070846418799,
+        "total_relative_rms": 0.00984097230350472
+      },
+      "decomposition": {
+        "bg_fraction_max": 0.5156758134513628,
+        "bg_fraction_min": 0.8784797218612707,
+        "bg_composition": {
+          "uniform_bg": 0.7870567315257773,
+          "radial_bg": 0.08419450052120941,
+          "incoherent_bg": 0.1287487679530134
+        },
+        "ranges_relative_observed_max": {
+          "signal": [
+            0.04561219566730144,
+            1.207348037234094
+          ],
+          "interference": [
+            -0.8627914908344826,
+            0.049670889825312745
+          ]
+        },
+        "interference_over_signal_range": [
+          -0.723522724420366,
+          1.050749910529825
+        ],
+        "fraction_bins_interference_negative": 0.9140625,
+        "fraction_bins_bg_gt_signal": 0.2578125,
+        "theta_range": [
+          11.853217700350939,
+          89.87207044495987
+        ],
+        "signal_min_max_ratio": 0.037778829517786876,
+        "dimmest_observed_bin": {
+          "index": 93,
+          "theta": 17.22329090688014,
+          "signal_over_signal_max": 0.07893943849908089,
+          "signal": 0.16236091569934152,
+          "background": 0.8784797218612707,
+          "interference": -0.025137408579833487,
+          "prediction": 1.0157032289807786
+        },
+        "pair_imbalance_rms": 0.0037874745217930214
+      }
+    },
+    "plus_cap10": {
+      "test": {
+        "xy_rms": 0.09639374512352263,
+        "channel_rms": 0.02160170418607823,
+        "total_relative_rms": 0.04634171590612106
+      },
+      "decomposition": {
+        "bg_fraction_max": 0.09999999999999998,
+        "bg_fraction_min": 0.17035503681696842,
+        "bg_composition": {
+          "uniform_bg": 0.17346314300706792,
+          "radial_bg": 0.17464617288054265,
+          "incoherent_bg": 0.6518906841123894
+        },
+        "ranges_relative_observed_max": {
+          "signal": [
+            0.31484888078908146,
+            0.9910941227763095
+          ],
+          "interference": [
+            -0.20470404494484967,
+            0.16253631590641326
+          ]
+        },
+        "interference_over_signal_range": [
+          -0.2082190067513266,
+          0.4249162540414704
+        ],
+        "fraction_bins_interference_negative": 0.4453125,
+        "fraction_bins_bg_gt_signal": 0.0,
+        "theta_range": [
+          28.0556504724001,
+          54.42611887185924
+        ],
+        "signal_min_max_ratio": 0.3176780827910762,
+        "dimmest_observed_bin": {
+          "index": 93,
+          "theta": 31.69097519147738,
+          "signal_over_signal_max": 0.39892420416064894,
+          "signal": 0.6735351522557248,
+          "background": 0.17035503681696842,
+          "interference": 0.13585622634567002,
+          "prediction": 0.9797464154183632
+        },
+        "pair_imbalance_rms": 0.0037874745217930214
+      }
+    },
+    "minus_wide": {
+      "test": {
+        "xy_rms": 0.035734096068475454,
+        "channel_rms": 0.007721169335025949,
+        "total_relative_rms": 0.009942120176290476
+      },
+      "decomposition": {
+        "bg_fraction_max": 0.4955786552478909,
+        "bg_fraction_min": 0.874464998558963,
+        "bg_composition": {
+          "uniform_bg": 0.8000152083672387,
+          "radial_bg": 0.09103731196339052,
+          "incoherent_bg": 0.10894747966937081
+        },
+        "ranges_relative_observed_max": {
+          "signal": [
+            0.044853751493303236,
+            1.1715488453702718
+          ],
+          "interference": [
+            -0.8463206292860447,
+            0.05261891655621257
+          ]
+        },
+        "interference_over_signal_range": [
+          -0.7285023386392796,
+          1.1226462181961485
+        ],
+        "fraction_bins_interference_negative": 0.9140625,
+        "fraction_bins_bg_gt_signal": 0.2578125,
+        "theta_range": [
+          11.933211173878068,
+          89.82541139493206
+        ],
+        "signal_min_max_ratio": 0.03828585694105401,
+        "dimmest_observed_bin": {
+          "index": 94,
+          "theta": 18.55869532319421,
+          "signal_over_signal_max": 0.09135973467849338,
+          "signal": 0.18886221035050715,
+          "background": 0.874464998558963,
+          "interference": -0.050318355300426415,
+          "prediction": 1.0130088536090438
+        },
+        "pair_imbalance_rms": 0.019143882503302772
+      }
+    },
+    "minus_cap10": {
+      "test": {
+        "xy_rms": 0.09698947866303922,
+        "channel_rms": 0.022342205271467637,
+        "total_relative_rms": 0.04758980547466246
+      },
+      "decomposition": {
+        "bg_fraction_max": 0.09999999999999999,
+        "bg_fraction_min": 0.1764533216471059,
+        "bg_composition": {
+          "uniform_bg": 0.16069496208845363,
+          "radial_bg": 0.13805540326478694,
+          "incoherent_bg": 0.7012496346467595
+        },
+        "ranges_relative_observed_max": {
+          "signal": [
+            0.30116703686366814,
+            0.9705382435259632
+          ],
+          "interference": [
+            -0.2040576598348894,
+            0.14718595095608525
+          ]
+        },
+        "interference_over_signal_range": [
+          -0.212835670398284,
+          0.3910184978906615
+        ],
+        "fraction_bins_interference_negative": 0.4453125,
+        "fraction_bins_bg_gt_signal": 0.0,
+        "theta_range": [
+          28.33242128756266,
+          56.03505756525277
+        ],
+        "signal_min_max_ratio": 0.31030929370647875,
+        "dimmest_observed_bin": {
+          "index": 94,
+          "theta": 30.767195106441363,
+          "signal_over_signal_max": 0.36209826105491616,
+          "signal": 0.6201102792893722,
+          "background": 0.1764533216471059,
+          "interference": 0.09262238740357913,
+          "prediction": 0.8891859883400572
+        },
+        "pair_imbalance_rms": 0.019143882503302772
+      }
+    }
+  },
+  "10s": {
+    "plus_wide": {
+      "test": {
+        "xy_rms": 0.04951841512479109,
+        "channel_rms": 0.010090442175721127,
+        "total_relative_rms": 0.01761319667656866
+      },
+      "decomposition": {
+        "bg_fraction_max": 0.5534022587543587,
+        "bg_fraction_min": 0.8922985901794503,
+        "bg_composition": {
+          "uniform_bg": 0.8097416312512781,
+          "radial_bg": 0.05603416770149252,
+          "incoherent_bg": 0.13422420104722946
+        },
+        "ranges_relative_observed_max": {
+          "signal": [
+            0.07351501637417242,
+            1.1860972730550223
+          ],
+          "interference": [
+            -0.905877066087392,
+            0.024947110637885322
+          ]
+        },
+        "interference_over_signal_range": [
+          -0.7908676342053356,
+          0.32674967669426735
+        ],
+        "fraction_bins_interference_negative": 0.9296875,
+        "fraction_bins_bg_gt_signal": 0.296875,
+        "theta_range": [
+          15.228445034950655,
+          89.99963985753668
+        ],
+        "signal_min_max_ratio": 0.06198059640152473,
+        "dimmest_observed_bin": {
+          "index": 93,
+          "theta": 18.639141039479934,
+          "signal_over_signal_max": 0.09213380314061759,
+          "signal": 0.17620108783877908,
+          "background": 0.8922985901794503,
+          "interference": -0.042114595004687755,
+          "prediction": 1.0263850830135417
+        },
+        "pair_imbalance_rms": 0.003216553280910276
+      }
+    },
+    "plus_cap10": {
+      "test": {
+        "xy_rms": 0.10277832887013415,
+        "channel_rms": 0.02342121080472827,
+        "total_relative_rms": 0.04995783139978801
+      },
+      "decomposition": {
+        "bg_fraction_max": 0.09999999999999996,
+        "bg_fraction_min": 0.16123869681846004,
+        "bg_composition": {
+          "uniform_bg": 0.34572736720776126,
+          "radial_bg": 0.14158911928917878,
+          "incoherent_bg": 0.51268351350306
+        },
+        "ranges_relative_observed_max": {
+          "signal": [
+            0.34015222470965933,
+            0.9488443632374023
+          ],
+          "interference": [
+            -0.21644622430186622,
+            0.18770172600718682
+          ]
+        },
+        "interference_over_signal_range": [
+          -0.23109410213214027,
+          0.4349914416859087
+        ],
+        "fraction_bins_interference_negative": 0.375,
+        "fraction_bins_bg_gt_signal": 0.0,
+        "theta_range": [
+          28.548187237463203,
+          51.318753349074456
+        ],
+        "signal_min_max_ratio": 0.35849106332789876,
+        "dimmest_observed_bin": {
+          "index": 93,
+          "theta": 29.322250771068028,
+          "signal_over_signal_max": 0.37696246264481925,
+          "signal": 0.5767164873064344,
+          "background": 0.16123869681846004,
+          "interference": 0.11745022551022623,
+          "prediction": 0.8554054096351206
+        },
+        "pair_imbalance_rms": 0.003216553280910276
+      }
+    },
+    "minus_wide": {
+      "test": {
+        "xy_rms": 0.05329851952249372,
+        "channel_rms": 0.011096967757295332,
+        "total_relative_rms": 0.01699165581201383
+      },
+      "decomposition": {
+        "bg_fraction_max": 0.532156991501798,
+        "bg_fraction_min": 0.8861967103075464,
+        "bg_composition": {
+          "uniform_bg": 0.8179218915077253,
+          "radial_bg": 0.060634543409305644,
+          "incoherent_bg": 0.12144356508296904
+        },
+        "ranges_relative_observed_max": {
+          "signal": [
+            0.07198302995713184,
+            1.1566718113684702
+          ],
+          "interference": [
+            -0.8896378667965084,
+            0.02931552848048042
+          ]
+        },
+        "interference_over_signal_range": [
+          -0.791786139361392,
+          0.37774285054719603
+        ],
+        "fraction_bins_interference_negative": 0.921875,
+        "fraction_bins_bg_gt_signal": 0.296875,
+        "theta_range": [
+          15.259571465223456,
+          89.64817937167287
+        ],
+        "signal_min_max_ratio": 0.06223289030616903,
+        "dimmest_observed_bin": {
+          "index": 94,
+          "theta": 19.917273054625337,
+          "signal_over_signal_max": 0.10485417592887451,
+          "signal": 0.2019697111508657,
+          "background": 0.8861967103075464,
+          "interference": -0.06653617136761791,
+          "prediction": 1.0216302500907941
+        },
+        "pair_imbalance_rms": 0.017509651869044515
+      }
+    },
+    "minus_cap10": {
+      "test": {
+        "xy_rms": 0.10207174715144982,
+        "channel_rms": 0.02391720908656128,
+        "total_relative_rms": 0.05337137193490872
+      },
+      "decomposition": {
+        "bg_fraction_max": 0.09999999999943288,
+        "bg_fraction_min": 0.16652918677279585,
+        "bg_composition": {
+          "uniform_bg": 0.807719698741188,
+          "radial_bg": 0.19228030125108025,
+          "incoherent_bg": 7.731704165792053e-12
+        },
+        "ranges_relative_observed_max": {
+          "signal": [
+            0.27835760285582867,
+            0.8710148834805216
+          ],
+          "interference": [
+            -0.16396098033537362,
+            0.2147842877086626
+          ]
+        },
+        "interference_over_signal_range": [
+          -0.19088878504283238,
+          0.6011273593561729
+        ],
+        "fraction_bins_interference_negative": 0.3203125,
+        "fraction_bins_bg_gt_signal": 0.0,
+        "theta_range": [
+          24.79585160344933,
+          46.60807176931838
+        ],
+        "signal_min_max_ratio": 0.3195784689046058,
+        "dimmest_observed_bin": {
+          "index": 94,
+          "theta": 27.7478504841448,
+          "signal_over_signal_max": 0.39579033820666293,
+          "signal": 0.5740915116730753,
+          "background": 0.16652918677279585,
+          "interference": 0.24206574906501407,
+          "prediction": 0.9826864475108852
+        },
+        "pair_imbalance_rms": 0.017509651869044515
+      }
+    }
+  }
+}
