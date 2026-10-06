@@ -96,7 +96,7 @@ for a,g in zip(axs,geoms):
     for key,label in [('mask_0','Measured hole + interface'),('annulus_0.38','Annulus .38 + interface'),('fourkas_038','Notebook annulus .38')]:
         pp=xy(models[key],dd);a.plot(pp[:,0],pp[:,1],label=label,lw=1.5)
         metrics[key+'_rms_xy']=float(np.sqrt(np.mean(np.sum((pp-p0)**2,axis=1))))
-    orbit_metrics.append(metrics);a.set(aspect='equal',xlabel='X',ylabel='Y',title='Axis %.1f°, %.1f°; cone %.1f°'%g)
+    orbit_metrics.append(metrics);a.set(xlim=(-1,1),ylim=(-1,1),aspect='equal',xlabel='X',ylabel='Y',title='Axis %.1f°, %.1f°; cone %.1f°'%g)
 axs[0].legend(fontsize=7);fig.savefig(out/'cone_shapes.png',dpi=160);plt.close(fig)
 (out/'orbit_metrics.json').write_text(json.dumps(orbit_metrics,indent=2)+'\n')
 print(json.dumps(result,indent=2),flush=True)
