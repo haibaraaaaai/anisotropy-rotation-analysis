@@ -1,0 +1,10 @@
+{
+  "30s": {
+    "per_cycle_plane_phase_adjustment_median": 0.1536475640852838,
+    "per_cycle_plane_phase_adjustment_p95": 0.31847770638010725
+  },
+  "10s": {
+    "per_cycle_plane_phase_adjustment_median": 0.22444630392620946,
+    "per_cycle_plane_phase_adjustment_p95": 0.4614295372319714
+  }
+}

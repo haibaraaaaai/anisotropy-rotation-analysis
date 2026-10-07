@@ -1,0 +1,13 @@
+{
+  "30s": {
+    "reference_fraction_max_change": 9.9271701969883e-12
+  },
+  "10s": {
+    "reference_fraction_max_change": 9.507283849075066e-12
+  },
+  "synthetic_nonuniform_reference": {
+    "corrected_channel_rms": 1.5401561320686e-05,
+    "uniform_index_channel_rms": 0.11364470483488082,
+    "note": "Residual corrected error is finite polygon/interpolant approximation, not exact continuous-curve identity."
+  }
+}

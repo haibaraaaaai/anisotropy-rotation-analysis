@@ -1,0 +1,8 @@
+{
+  "max_signal_error": 1.1102230246251565e-16,
+  "max_plane_error": 3.3306690738754696e-16,
+  "channel_rms": 2.6961017962486324e-16,
+  "closed": true,
+  "known_cone_half_angle": 0.22,
+  "recovered_cone_half_angle": 0.2200000000000004
+}

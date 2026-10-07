@@ -1,0 +1,7 @@
+# Corrected final-reference arc coordinates (6 October 2026)
+
+Supersedes equal-arc forward interpretations in arc_matching and inverse_circle. Original bin intensities unchanged. Coordinates obtained from a dense closed ordered four-channel interpolant of the FINAL training average, computing ratios after interpolation. Simulation samples actual reference fractions plus one cyclic offset, both directions. Same train-derived fractions used for held-out bins, not independently aligned. Objective still equally weights original bins; this is distinct from uniformly resampling/reweighting the final curve.
+
+run.py fits none, additive, exact Richard, bounded additive+interference; richard_limit.py profiles exact Richard using alpha=a0^2,K=a0*C, with alpha=0 admitted only as a closure diagnostic. Richard10 finite parameter refinement does not converge and approaches limiting regime; never report as a well-determined finite-C fit. report.py uses stabilized product fits, labels limiting curve explicitly. Four-channel brightness law remains fixed excitation with one a0 per interval.
+
+Reproduce run.py then richard_limit.py then report.py, compile report.tex with XeLaTeX from this folder. numpy scipy matplotlib required; cached arc_matching/inputs.npz supplies training/held-out data and historical fit files supply starts. Checks: reference interpolation convergence, simulation convergence, synthetic known nonuniform correspondence. Scripts do not push.

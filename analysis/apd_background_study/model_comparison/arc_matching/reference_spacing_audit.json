@@ -1,0 +1,11 @@
+{
+  "status": "confirmed coordinate mismatch; corrected fits not run",
+  "heldout_step_cv": {
+    "30s": 0.3618634347046574,
+    "10s": 0.3862243917292435
+  },
+  "heldout_minimax_fraction_error_after_offset": {
+    "30s": 0.07538987974663983,
+    "10s": 0.0763417674411124
+  }
+}

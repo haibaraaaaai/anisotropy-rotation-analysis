@@ -1,0 +1,272 @@
+[
+  {
+    "window": "30s",
+    "model": "square",
+    "heldout_measured_normalized_rms": 0.02871216398456199,
+    "signal_normalized_rms": 0.06886879412496605,
+    "invalid": 74,
+    "bg_percent": 35.50370239486333,
+    "min_signal_percent": 12.890156579162507
+  },
+  {
+    "window": "30s",
+    "model": "richard_product",
+    "heldout_measured_normalized_rms": 0.039084709753668456,
+    "signal_normalized_rms": 0.8674780405218309,
+    "invalid": 128,
+    "bg_percent": 0.0,
+    "min_signal_percent": 1.667594133498353
+  },
+  {
+    "window": "30s",
+    "model": "complex",
+    "heldout_measured_normalized_rms": 0.026281369310750754,
+    "signal_normalized_rms": 0.04983194687909214,
+    "invalid": 66,
+    "bg_percent": 42.36881835458575,
+    "min_signal_percent": 16.371122291884877
+  },
+  {
+    "window": "30s",
+    "model": "stationary_best",
+    "heldout_measured_normalized_rms": 0.0050598160230939625,
+    "signal_normalized_rms": 0.04880306364464549,
+    "invalid": 21,
+    "bg_percent": 54.839344037628365,
+    "min_signal_percent": 1.270057397254239
+  },
+  {
+    "window": "30s",
+    "model": "stationary_run0",
+    "heldout_measured_normalized_rms": 0.0058676474542657285,
+    "signal_normalized_rms": 0.013085793917513648,
+    "invalid": 0,
+    "bg_percent": 48.27837322655942,
+    "min_signal_percent": 15.636361913861288
+  },
+  {
+    "window": "30s",
+    "model": "stationary_run4",
+    "heldout_measured_normalized_rms": 0.005698720298578766,
+    "signal_normalized_rms": 0.011989416002487955,
+    "invalid": 0,
+    "bg_percent": 47.584342526541434,
+    "min_signal_percent": 17.96025600785283
+  },
+  {
+    "window": "30s",
+    "model": "stationary_run5",
+    "heldout_measured_normalized_rms": 0.04238120766403123,
+    "signal_normalized_rms": 0.0743100289994765,
+    "invalid": 0,
+    "bg_percent": 55.69062335803354,
+    "min_signal_percent": 28.98844821178978
+  },
+  {
+    "window": "30s",
+    "model": "stationary_run6",
+    "heldout_measured_normalized_rms": 0.019574194218636796,
+    "signal_normalized_rms": 0.01844033144089529,
+    "invalid": 55,
+    "bg_percent": 34.102153025306656,
+    "min_signal_percent": 50.58508890962672
+  },
+  {
+    "window": "30s",
+    "model": "stationary_run7",
+    "heldout_measured_normalized_rms": 0.05135271764181657,
+    "signal_normalized_rms": 0.08986184622148569,
+    "invalid": 1,
+    "bg_percent": 32.14077565573136,
+    "min_signal_percent": 33.4289537744361
+  },
+  {
+    "window": "30s",
+    "model": "stationary_run8",
+    "heldout_measured_normalized_rms": 0.00569978769376571,
+    "signal_normalized_rms": 0.012032522536685079,
+    "invalid": 0,
+    "bg_percent": 47.590314900345724,
+    "min_signal_percent": 17.850055593241244
+  },
+  {
+    "window": "30s",
+    "model": "stationary_run9",
+    "heldout_measured_normalized_rms": 0.008502919897748788,
+    "signal_normalized_rms": 0.019843533697165648,
+    "invalid": 35,
+    "bg_percent": 55.32562097189657,
+    "min_signal_percent": 7.551692003983115
+  },
+  {
+    "window": "30s",
+    "model": "stationary_run10",
+    "heldout_measured_normalized_rms": 0.005698286409827113,
+    "signal_normalized_rms": 0.011986439302809298,
+    "invalid": 0,
+    "bg_percent": 47.58688239345992,
+    "min_signal_percent": 17.961945532474612
+  },
+  {
+    "window": "30s",
+    "model": "stationary_run11",
+    "heldout_measured_normalized_rms": 0.005698720298578766,
+    "signal_normalized_rms": 0.011989416002487955,
+    "invalid": 0,
+    "bg_percent": 47.584342526541434,
+    "min_signal_percent": 17.96025600785283
+  },
+  {
+    "window": "30s",
+    "model": "stationary_run12",
+    "heldout_measured_normalized_rms": 0.00569978769376571,
+    "signal_normalized_rms": 0.012032522536685079,
+    "invalid": 0,
+    "bg_percent": 47.590314900345724,
+    "min_signal_percent": 17.850055593241244
+  },
+  {
+    "window": "30s",
+    "model": "stationary_run13",
+    "heldout_measured_normalized_rms": 0.005059958238913147,
+    "signal_normalized_rms": 0.04880307284652432,
+    "invalid": 21,
+    "bg_percent": 54.83891270829242,
+    "min_signal_percent": 1.2695792191527842
+  },
+  {
+    "window": "10s",
+    "model": "square",
+    "heldout_measured_normalized_rms": 0.032451713815899084,
+    "signal_normalized_rms": 0.07595596597421246,
+    "invalid": 72,
+    "bg_percent": 38.29304244638516,
+    "min_signal_percent": 15.482962752880578
+  },
+  {
+    "window": "10s",
+    "model": "richard_product",
+    "heldout_measured_normalized_rms": 0.039298242018406794,
+    "signal_normalized_rms": 2.8500706307560613,
+    "invalid": 128,
+    "bg_percent": 0.0,
+    "min_signal_percent": 0.5720877810114364
+  },
+  {
+    "window": "10s",
+    "model": "complex",
+    "heldout_measured_normalized_rms": 0.02905174355734042,
+    "signal_normalized_rms": 0.06389704673279409,
+    "invalid": 72,
+    "bg_percent": 39.78686093592334,
+    "min_signal_percent": 16.87471437394676
+  },
+  {
+    "window": "10s",
+    "model": "stationary_best",
+    "heldout_measured_normalized_rms": 0.009537363285691354,
+    "signal_normalized_rms": 0.05751286894895939,
+    "invalid": 23,
+    "bg_percent": 54.5470772098722,
+    "min_signal_percent": 3.222478517035754
+  },
+  {
+    "window": "10s",
+    "model": "stationary_run0",
+    "heldout_measured_normalized_rms": 0.009814130100151156,
+    "signal_normalized_rms": 0.02209671805306943,
+    "invalid": 0,
+    "bg_percent": 48.02107315778994,
+    "min_signal_percent": 18.702881342201504
+  },
+  {
+    "window": "10s",
+    "model": "stationary_run4",
+    "heldout_measured_normalized_rms": 0.009908100350629768,
+    "signal_normalized_rms": 0.0181865814239197,
+    "invalid": 0,
+    "bg_percent": 47.33074130126871,
+    "min_signal_percent": 25.064988642490256
+  },
+  {
+    "window": "10s",
+    "model": "stationary_run5",
+    "heldout_measured_normalized_rms": 0.04535429273253582,
+    "signal_normalized_rms": 0.07434043982918172,
+    "invalid": 0,
+    "bg_percent": 55.39381962869921,
+    "min_signal_percent": 27.019517769974726
+  },
+  {
+    "window": "10s",
+    "model": "stationary_run6",
+    "heldout_measured_normalized_rms": 0.05420892430083188,
+    "signal_normalized_rms": 0.08969529927063778,
+    "invalid": 6,
+    "bg_percent": 33.920405262650654,
+    "min_signal_percent": 33.609727196938586
+  },
+  {
+    "window": "10s",
+    "model": "stationary_run7",
+    "heldout_measured_normalized_rms": 0.021749904996498152,
+    "signal_normalized_rms": 0.02221372325602304,
+    "invalid": 50,
+    "bg_percent": 31.96948107321269,
+    "min_signal_percent": 47.71621250498293
+  },
+  {
+    "window": "10s",
+    "model": "stationary_run8",
+    "heldout_measured_normalized_rms": 0.009906558344398563,
+    "signal_normalized_rms": 0.018233624101479932,
+    "invalid": 0,
+    "bg_percent": 47.3366818452476,
+    "min_signal_percent": 24.942532969054014
+  },
+  {
+    "window": "10s",
+    "model": "stationary_run9",
+    "heldout_measured_normalized_rms": 0.01312707451521386,
+    "signal_normalized_rms": 0.04352092819565574,
+    "invalid": 19,
+    "bg_percent": 55.030762526398,
+    "min_signal_percent": 9.717177097997928
+  },
+  {
+    "window": "10s",
+    "model": "stationary_run10",
+    "heldout_measured_normalized_rms": 0.00990617112093128,
+    "signal_normalized_rms": 0.018182762819353566,
+    "invalid": 0,
+    "bg_percent": 47.333267631941276,
+    "min_signal_percent": 25.061095169988274
+  },
+  {
+    "window": "10s",
+    "model": "stationary_run11",
+    "heldout_measured_normalized_rms": 0.009908100350629768,
+    "signal_normalized_rms": 0.0181865814239197,
+    "invalid": 0,
+    "bg_percent": 47.33074130126871,
+    "min_signal_percent": 25.064988642490256
+  },
+  {
+    "window": "10s",
+    "model": "stationary_run12",
+    "heldout_measured_normalized_rms": 0.009906558344398563,
+    "signal_normalized_rms": 0.018233624101479932,
+    "invalid": 0,
+    "bg_percent": 47.3366818452476,
+    "min_signal_percent": 24.942532969054014
+  },
+  {
+    "window": "10s",
+    "model": "stationary_run13",
+    "heldout_measured_normalized_rms": 0.009537611517321075,
+    "signal_normalized_rms": 0.057521222449563716,
+    "invalid": 23,
+    "bg_percent": 54.54664817931022,
+    "min_signal_percent": 3.222405519175008
+  }
+]

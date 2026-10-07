@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+model_comparison/meeting_2026_10_06/output/
+
+# Reproducible TeX build state and alternate export jobs
+*.aux
+*.out
+*.toc
+*.log
+*.xdv
+*.prior
+model_comparison/consolidated/integrated_final.pdf
+model_comparison/consolidated/vector_final.pdf

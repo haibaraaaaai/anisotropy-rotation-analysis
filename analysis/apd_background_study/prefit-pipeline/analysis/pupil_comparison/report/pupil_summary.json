@@ -1,0 +1,247 @@
+{
+  "mask_source": "haibaraaaaai/thesis@7576b50:analysis/image_mirror_binary.tif",
+  "metadata": {
+    "source": "1.png",
+    "source_circle_center_xy": [
+      718.5396849892994,
+      642.5502898404407
+    ],
+    "source_circle_radius_px": 388.22048160268923,
+    "mask_center_xy": [
+      217,
+      230
+    ],
+    "mask_scale_mm_per_px": 0.005957446808510638,
+    "outer_radius_mm": 2.4,
+    "array_axis_order": "x,y (legacy find_mask_indices convention)",
+    "blocked_value": 255,
+    "unblocked_value": 0
+  },
+  "mask_equivalent_inner_NA": 0.38133886024996705,
+  "mask_centroid_offset_NA": [
+    -0.020708692049340158,
+    -0.008159244526953973
+  ],
+  "assumptions": "Propagating dipole far field; real Fresnel amplitudes; flat water/oil interface; uniform Cartesian BFP power integration; no background/noise; exact mask registration not experimentally confirmed.",
+  "checks": {
+    "homogeneous_max_xy_error_R240": 4.886597865583209e-05,
+    "pair_sum_max_relative_R240": 4.4380414767732917e-14,
+    "homogeneous_max_xy_error_R480": 4.7718338744950906e-05,
+    "pair_sum_max_relative_R480": 5.887326615829512e-14,
+    "grid_convergence_max_xy_change": {
+      "annulus_0.38": 8.520459872340957e-05,
+      "annulus_0.39": 6.0068135287028035e-05,
+      "annulus_0.38133886024996705": 4.27684448573995e-05,
+      "mask_0": 4.9970735691359745e-05,
+      "mask_45": 6.515545174948524e-05,
+      "mask_90": 4.997073567761694e-05,
+      "mask_135": 6.515545176299014e-05,
+      "legacy_weight_mask": 1.8216957065740203e-05,
+      "legacy_weight_annulus": 5.236703626654293e-05,
+      "fourkas_038": 0.0,
+      "fourkas_039": 0.0
+    }
+  },
+  "comparisons": {
+    "hole_shape_equal_area": {
+      "delta_xy": {
+        "rms": 0.0009425063211063647,
+        "max_abs": 0.0016901453892708366,
+        "median_abs": 0.0008823396555949993
+      },
+      "theta_error_deg": {
+        "rms": 0.04647661565894098,
+        "max_abs": 0.21847259185893186,
+        "median_abs": 0.02115320512497121
+      },
+      "phi_error_deg": {
+        "rms": 0.26624386807261097,
+        "max_abs": 2.7519132540768396,
+        "median_abs": 0.04911438411173208
+      },
+      "invalid_theta_fraction": 0.0,
+      "theta_range_deg": [
+        5,
+        85
+      ],
+      "phi_range_deg": [
+        0,
+        355
+      ]
+    },
+    "hole_shape_038": {
+      "delta_xy": {
+        "rms": 0.0009459376514437897,
+        "max_abs": 0.0016954646287851154,
+        "median_abs": 0.0008931727464176985
+      },
+      "theta_error_deg": {
+        "rms": 0.04736572507344528,
+        "max_abs": 0.2181016673359908,
+        "median_abs": 0.025440420071305425
+      },
+      "phi_error_deg": {
+        "rms": 0.26624386807261097,
+        "max_abs": 2.7519132540768396,
+        "median_abs": 0.04911438411173208
+      },
+      "invalid_theta_fraction": 0.0,
+      "theta_range_deg": [
+        5,
+        85
+      ],
+      "phi_range_deg": [
+        0,
+        355
+      ]
+    },
+    "hole_shape_039": {
+      "delta_xy": {
+        "rms": 0.0011496629953482145,
+        "max_abs": 0.0021081467250303695,
+        "median_abs": 0.0009632186423254975
+      },
+      "theta_error_deg": {
+        "rms": 0.07083869411801381,
+        "max_abs": 0.22804715314192148,
+        "median_abs": 0.05892492997217147
+      },
+      "phi_error_deg": {
+        "rms": 0.26624386807261097,
+        "max_abs": 2.7519132540768396,
+        "median_abs": 0.04911438411173208
+      },
+      "invalid_theta_fraction": 0.0,
+      "theta_range_deg": [
+        5,
+        85
+      ],
+      "phi_range_deg": [
+        0,
+        355
+      ]
+    },
+    "radius_038_vs_039": {
+      "delta_xy": {
+        "rms": 0.0007422905799836766,
+        "max_abs": 0.0010823862936083506,
+        "median_abs": 0.0007099601336618402
+      },
+      "theta_error_deg": {
+        "rms": 0.06075915581782599,
+        "max_abs": 0.13609326121219567,
+        "median_abs": 0.06364490469073303
+      },
+      "phi_error_deg": {
+        "rms": 0.0005376224928864235,
+        "max_abs": 0.0007487656224611783,
+        "median_abs": 0.0004887297254185796
+      },
+      "invalid_theta_fraction": 0.0,
+      "theta_range_deg": [
+        5,
+        85
+      ],
+      "phi_range_deg": [
+        0,
+        355
+      ]
+    },
+    "interface_vs_notebook": {
+      "delta_xy": {
+        "rms": 0.003133186552982863,
+        "max_abs": 0.0065474879480430515,
+        "median_abs": 0.0009615271789931926
+      },
+      "theta_error_deg": {
+        "rms": 0.6078351538630565,
+        "max_abs": 2.896263770544792,
+        "median_abs": 0.05608263133848723
+      },
+      "phi_error_deg": {
+        "rms": 0.0005376224928864235,
+        "max_abs": 0.0007487656224611783,
+        "median_abs": 0.0004887297254185796
+      },
+      "invalid_theta_fraction": 0.012345679012345678,
+      "theta_range_deg": [
+        5,
+        85
+      ],
+      "phi_range_deg": [
+        0,
+        355
+      ]
+    },
+    "combined_vs_notebook": {
+      "delta_xy": {
+        "rms": 0.0032253590359716425,
+        "max_abs": 0.006533889071945095,
+        "median_abs": 0.0016374613172009827
+      },
+      "theta_error_deg": {
+        "rms": 0.6031384277738508,
+        "max_abs": 2.883257173230959,
+        "median_abs": 0.10125164601531011
+      },
+      "phi_error_deg": {
+        "rms": 0.26624386807261097,
+        "max_abs": 2.7519132540768396,
+        "median_abs": 0.04911438411173208
+      },
+      "invalid_theta_fraction": 0.012345679012345678,
+      "theta_range_deg": [
+        5,
+        85
+      ],
+      "phi_range_deg": [
+        0,
+        355
+      ]
+    },
+    "weighting_only_annulus": {
+      "delta_xy": {
+        "rms": 0.02414369583895083,
+        "max_abs": 0.03395479419521097,
+        "median_abs": 0.023332416156207396
+      },
+      "theta_error_deg": {
+        "rms": 2.1254728775675513,
+        "max_abs": 4.600125023130872,
+        "median_abs": 2.0709254705592066
+      },
+      "phi_error_deg": {
+        "rms": 0.0005376224928864235,
+        "max_abs": 0.0007487656224611783,
+        "median_abs": 0.0004887297254185796
+      },
+      "invalid_theta_fraction": 0.0,
+      "theta_range_deg": [
+        5,
+        85
+      ],
+      "phi_range_deg": [
+        0,
+        355
+      ]
+    }
+  },
+  "registration": {
+    "0": {
+      "theta_rms_deg": 0.04736572507344528,
+      "theta_max_deg": 0.2181016673359908
+    },
+    "45": {
+      "theta_rms_deg": 0.04732905571942486,
+      "theta_max_deg": 0.21807751872709602
+    },
+    "90": {
+      "theta_rms_deg": 0.047365725073724614,
+      "theta_max_deg": 0.21810166733774317
+    },
+    "135": {
+      "theta_rms_deg": 0.04732905571958326,
+      "theta_max_deg": 0.21807751872873649
+    }
+  }
+}

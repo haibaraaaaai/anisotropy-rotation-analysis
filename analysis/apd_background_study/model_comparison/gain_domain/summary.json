@@ -1,0 +1,182 @@
+[
+  {
+    "weight": "0",
+    "window": "30s",
+    "success": true,
+    "bg": 54.720184589611506,
+    "train": {
+      "channel_rms": 0.004228740569064822,
+      "invalid": 21,
+      "negative": 3,
+      "max_radial_excess": 5.197787291093202
+    },
+    "test": {
+      "channel_rms": 0.005031747341771985,
+      "invalid": 23,
+      "negative": 3,
+      "max_radial_excess": 3.663497781435273
+    }
+  },
+  {
+    "weight": "0",
+    "window": "10s",
+    "success": true,
+    "bg": 54.46926459102279,
+    "train": {
+      "channel_rms": 0.005035411623299485,
+      "invalid": 0,
+      "negative": 0,
+      "max_radial_excess": 0.0
+    },
+    "test": {
+      "channel_rms": 0.009530530214939005,
+      "invalid": 23,
+      "negative": 5,
+      "max_radial_excess": 2.1164271634677028
+    }
+  },
+  {
+    "weight": "0.01",
+    "window": "30s",
+    "success": true,
+    "bg": 52.77144807882843,
+    "train": {
+      "channel_rms": 0.004182895254333531,
+      "invalid": 19,
+      "negative": 0,
+      "max_radial_excess": 0.05511160478735799
+    },
+    "test": {
+      "channel_rms": 0.005067200183161109,
+      "invalid": 21,
+      "negative": 2,
+      "max_radial_excess": 0.47425815032431806
+    }
+  },
+  {
+    "weight": "0.01",
+    "window": "10s",
+    "success": true,
+    "bg": 52.52946403259811,
+    "train": {
+      "channel_rms": 0.005199731635487612,
+      "invalid": 0,
+      "negative": 0,
+      "max_radial_excess": 0.0
+    },
+    "test": {
+      "channel_rms": 0.009619680276725344,
+      "invalid": 22,
+      "negative": 3,
+      "max_radial_excess": 0.663859631270525
+    }
+  },
+  {
+    "weight": "0.1",
+    "window": "30s",
+    "success": true,
+    "bg": 52.73391309439912,
+    "train": {
+      "channel_rms": 0.004148476190215488,
+      "invalid": 17,
+      "negative": 0,
+      "max_radial_excess": 0.00942675643042501
+    },
+    "test": {
+      "channel_rms": 0.0050164054565052735,
+      "invalid": 20,
+      "negative": 2,
+      "max_radial_excess": 0.47480862117342626
+    }
+  },
+  {
+    "weight": "0.1",
+    "window": "10s",
+    "success": true,
+    "bg": 52.49210116524608,
+    "train": {
+      "channel_rms": 0.005244430355387973,
+      "invalid": 0,
+      "negative": 0,
+      "max_radial_excess": 0.0
+    },
+    "test": {
+      "channel_rms": 0.009643350163935973,
+      "invalid": 18,
+      "negative": 3,
+      "max_radial_excess": 0.6664788576379691
+    }
+  },
+  {
+    "weight": "1",
+    "window": "30s",
+    "success": true,
+    "bg": 52.82579308745275,
+    "train": {
+      "channel_rms": 0.004106069494717047,
+      "invalid": 11,
+      "negative": 0,
+      "max_radial_excess": 0.004679375574920375
+    },
+    "test": {
+      "channel_rms": 0.004930857582690403,
+      "invalid": 15,
+      "negative": 2,
+      "max_radial_excess": 0.5829344105366382
+    }
+  },
+  {
+    "weight": "1",
+    "window": "10s",
+    "success": true,
+    "bg": 52.58355984159731,
+    "train": {
+      "channel_rms": 0.0053149339186836396,
+      "invalid": 0,
+      "negative": 0,
+      "max_radial_excess": 0.0
+    },
+    "test": {
+      "channel_rms": 0.009683100361588773,
+      "invalid": 19,
+      "negative": 3,
+      "max_radial_excess": 0.7295237947701539
+    }
+  },
+  {
+    "weight": "10",
+    "window": "30s",
+    "success": true,
+    "bg": 52.893261122884326,
+    "train": {
+      "channel_rms": 0.00410101158806396,
+      "invalid": 4,
+      "negative": 0,
+      "max_radial_excess": 0.0017727464192022202
+    },
+    "test": {
+      "channel_rms": 0.004898323312354398,
+      "invalid": 9,
+      "negative": 2,
+      "max_radial_excess": 0.6612887221249363
+    }
+  },
+  {
+    "weight": "10",
+    "window": "10s",
+    "success": true,
+    "bg": 52.65071850162229,
+    "train": {
+      "channel_rms": 0.005356452579366923,
+      "invalid": 0,
+      "negative": 0,
+      "max_radial_excess": 0.0
+    },
+    "test": {
+      "channel_rms": 0.009706992410355863,
+      "invalid": 18,
+      "negative": 4,
+      "max_radial_excess": 0.7603553085410378
+    }
+  }
+]

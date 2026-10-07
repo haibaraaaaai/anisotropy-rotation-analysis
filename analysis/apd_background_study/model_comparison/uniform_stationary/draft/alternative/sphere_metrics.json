@@ -1,0 +1,38 @@
+[
+  {
+    "model": "stationary",
+    "interval": "30s",
+    "valid": 128,
+    "invalid": 0,
+    "negative_channels": 0,
+    "over_rmax": 0,
+    "geodesic_rms_valid": 4.56647368115354,
+    "cross_rms_valid": 3.1727827210106985,
+    "along_rms_valid": 3.6439049248338793,
+    "pair_imbalance_rms": 0.0052381934329013575,
+    "bg_percent": 47.58688239345993,
+    "heldout_channel_rms": 0.005698286409827113,
+    "cone_half_angle_deg": 45.40411112800282,
+    "diagnostic_invalid": 0,
+    "diagnostic_off_axes": 0,
+    "residuals_outside_plot": 0
+  },
+  {
+    "model": "stationary",
+    "interval": "10s",
+    "valid": 128,
+    "invalid": 0,
+    "negative_channels": 0,
+    "over_rmax": 0,
+    "geodesic_rms_valid": 5.023919756622581,
+    "cross_rms_valid": 4.453008322579773,
+    "along_rms_valid": 2.0828365089556025,
+    "pair_imbalance_rms": 0.005382074994156474,
+    "bg_percent": 47.333267631941276,
+    "heldout_channel_rms": 0.00990617112093128,
+    "cone_half_angle_deg": 45.77173085100935,
+    "diagnostic_invalid": 0,
+    "diagnostic_off_axes": 0,
+    "residuals_outside_plot": 0
+  }
+]

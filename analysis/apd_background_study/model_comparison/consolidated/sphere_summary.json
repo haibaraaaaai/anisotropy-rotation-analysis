@@ -1,0 +1,412 @@
+{
+  "none": {
+    "case": "uncapped",
+    "stats": [
+      {
+        "window": "30s",
+        "valid": 128,
+        "branch_audit": {
+          "valid": 128,
+          "max_step_deg": 3.093025490708154,
+          "closure_mismatch_deg": 114.38850894553289,
+          "winding": -1.0,
+          "closure_assessed": true,
+          "median_step_deg": 1.5489675404698389,
+          "seam_step_deg": 114.06499301605344,
+          "old_max_step_deg": 52.430272332852624,
+          "changed_points": 44,
+          "inversion_roundtrip_max_error": 3.3306690738754696e-16,
+          "steps_across_invalid_gaps": 0
+        },
+        "geo_rms": 52.0216932015819
+      },
+      {
+        "window": "10s",
+        "valid": 128,
+        "branch_audit": {
+          "valid": 128,
+          "max_step_deg": 3.3875243770905623,
+          "closure_mismatch_deg": 113.9422545438996,
+          "winding": -1.0000000000000002,
+          "closure_assessed": true,
+          "median_step_deg": 1.5790446213451008,
+          "seam_step_deg": 113.66576488773805,
+          "old_max_step_deg": 49.90948220663591,
+          "changed_points": 48,
+          "inversion_roundtrip_max_error": 3.3306690738754696e-16,
+          "steps_across_invalid_gaps": 0
+        },
+        "geo_rms": 54.705781850197916
+      }
+    ]
+  },
+  "square": {
+    "case": "10pct",
+    "stats": [
+      {
+        "window": "30s",
+        "valid": 128,
+        "branch_audit": {
+          "valid": 128,
+          "max_step_deg": 11.49965349828372,
+          "closure_mismatch_deg": 0.0,
+          "winding": -2.0,
+          "closure_assessed": true,
+          "median_step_deg": 1.7251466002227476,
+          "seam_step_deg": 1.8175179559965846,
+          "old_max_step_deg": 11.49965349828372,
+          "changed_points": 0,
+          "inversion_roundtrip_max_error": 3.3306690738754696e-16,
+          "steps_across_invalid_gaps": 0
+        },
+        "geo_rms": 11.652387941502395
+      },
+      {
+        "window": "10s",
+        "valid": 128,
+        "branch_audit": {
+          "valid": 128,
+          "max_step_deg": 7.079383190068762,
+          "closure_mismatch_deg": 0.0,
+          "winding": -2.0,
+          "closure_assessed": true,
+          "median_step_deg": 1.7417125107951157,
+          "seam_step_deg": 1.8213131482212261,
+          "old_max_step_deg": 7.079383190068762,
+          "changed_points": 0,
+          "inversion_roundtrip_max_error": 3.885780586188048e-16,
+          "steps_across_invalid_gaps": 0
+        },
+        "geo_rms": 13.775296533631046
+      }
+    ]
+  },
+  "richard_product": {
+    "case": "uncapped",
+    "stats": [
+      {
+        "window": "30s",
+        "valid": 125,
+        "branch_audit": {
+          "valid": 125,
+          "max_step_deg": 9.771910618161366,
+          "closure_mismatch_deg": 128.76072305854964,
+          "winding": null,
+          "closure_assessed": false,
+          "median_step_deg": 2.6669983432399724,
+          "seam_step_deg": 128.89412057425426,
+          "old_max_step_deg": 84.79267898646835,
+          "changed_points": 41,
+          "inversion_roundtrip_max_error": 3.3306690738754696e-16,
+          "steps_across_invalid_gaps": 1
+        },
+        "geo_rms": 71.88285699915706
+      },
+      {
+        "window": "10s",
+        "valid": 114,
+        "branch_audit": {
+          "valid": 114,
+          "max_step_deg": 26.537719182493802,
+          "closure_mismatch_deg": 117.48312075880347,
+          "winding": null,
+          "closure_assessed": false,
+          "median_step_deg": 3.097370724153503,
+          "seam_step_deg": 117.53075905053205,
+          "old_max_step_deg": 92.86841202000733,
+          "changed_points": 40,
+          "inversion_roundtrip_max_error": 5.967448757360216e-16,
+          "steps_across_invalid_gaps": 2
+        },
+        "geo_rms": 74.54508622934564
+      }
+    ]
+  },
+  "complex": {
+    "case": "10pct",
+    "stats": [
+      {
+        "window": "30s",
+        "valid": 126,
+        "branch_audit": {
+          "valid": 126,
+          "max_step_deg": 4.6354909606490535,
+          "closure_mismatch_deg": 141.50225717196557,
+          "winding": null,
+          "closure_assessed": false,
+          "median_step_deg": 2.2958133453418696,
+          "seam_step_deg": 140.8820732881999,
+          "old_max_step_deg": 74.42115548858581,
+          "changed_points": 69,
+          "inversion_roundtrip_max_error": 3.3306690738754696e-16,
+          "steps_across_invalid_gaps": 1
+        },
+        "geo_rms": 72.59761999466595
+      },
+      {
+        "window": "10s",
+        "valid": 123,
+        "branch_audit": {
+          "valid": 123,
+          "max_step_deg": 6.279083033033049,
+          "closure_mismatch_deg": 131.3217550277793,
+          "winding": null,
+          "closure_assessed": false,
+          "median_step_deg": 2.3038543566301546,
+          "seam_step_deg": 130.6961817205054,
+          "old_max_step_deg": 77.06088587777228,
+          "changed_points": 49,
+          "inversion_roundtrip_max_error": 4.718447854656915e-16,
+          "steps_across_invalid_gaps": 1
+        },
+        "geo_rms": 75.84636608064895
+      }
+    ]
+  },
+  "uniform": {
+    "case": "10pct",
+    "stats": [
+      {
+        "window": "30s",
+        "valid": 128,
+        "branch_audit": {
+          "valid": 128,
+          "max_step_deg": 28.940763667012003,
+          "closure_mismatch_deg": 8.537736462515939e-07,
+          "winding": -2.0,
+          "closure_assessed": true,
+          "median_step_deg": 1.773466673786828,
+          "seam_step_deg": 1.750902176212213,
+          "old_max_step_deg": 58.15811581387883,
+          "changed_points": 43,
+          "inversion_roundtrip_max_error": 4.440892098500626e-16,
+          "steps_across_invalid_gaps": 0
+        },
+        "geo_rms": 20.166156333041602
+      },
+      {
+        "window": "10s",
+        "valid": 128,
+        "branch_audit": {
+          "valid": 128,
+          "max_step_deg": 26.506961030116543,
+          "closure_mismatch_deg": 0.0,
+          "winding": -2.0,
+          "closure_assessed": true,
+          "median_step_deg": 1.834621829411484,
+          "seam_step_deg": 1.7984335813802006,
+          "old_max_step_deg": 53.4439997245834,
+          "changed_points": 58,
+          "inversion_roundtrip_max_error": 4.996003610813204e-16,
+          "steps_across_invalid_gaps": 0
+        },
+        "geo_rms": 27.226021689252605
+      }
+    ]
+  },
+  "three": {
+    "case": "10pct",
+    "stats": [
+      {
+        "window": "30s",
+        "valid": 128,
+        "branch_audit": {
+          "valid": 128,
+          "max_step_deg": 24.725082984881226,
+          "closure_mismatch_deg": 142.97685895498066,
+          "winding": -1.0,
+          "closure_assessed": true,
+          "median_step_deg": 1.7407189029172314,
+          "seam_step_deg": 142.21769269532524,
+          "old_max_step_deg": 63.886495097088115,
+          "changed_points": 91,
+          "inversion_roundtrip_max_error": 6.106226635438361e-16,
+          "steps_across_invalid_gaps": 0
+        },
+        "geo_rms": 79.40893503792975
+      },
+      {
+        "window": "10s",
+        "valid": 128,
+        "branch_audit": {
+          "valid": 128,
+          "max_step_deg": 20.01235966968526,
+          "closure_mismatch_deg": 147.78357788814378,
+          "winding": -1.0,
+          "closure_assessed": true,
+          "median_step_deg": 1.861094188405367,
+          "seam_step_deg": 146.90476284134203,
+          "old_max_step_deg": 57.2649655086802,
+          "changed_points": 94,
+          "inversion_roundtrip_max_error": 4.996003610813204e-16,
+          "steps_across_invalid_gaps": 0
+        },
+        "geo_rms": 85.4138308888625
+      }
+    ]
+  },
+  "five": {
+    "case": "10pct",
+    "stats": [
+      {
+        "window": "30s",
+        "valid": 128,
+        "branch_audit": {
+          "valid": 128,
+          "max_step_deg": 5.457832801200564,
+          "closure_mismatch_deg": 105.16684007445436,
+          "winding": -1.0,
+          "closure_assessed": true,
+          "median_step_deg": 1.4937033385659206,
+          "seam_step_deg": 104.51564332709422,
+          "old_max_step_deg": 47.09883609223534,
+          "changed_points": 46,
+          "inversion_roundtrip_max_error": 4.440892098500626e-16,
+          "steps_across_invalid_gaps": 0
+        },
+        "geo_rms": 50.66682691454976
+      },
+      {
+        "window": "10s",
+        "valid": 128,
+        "branch_audit": {
+          "valid": 128,
+          "max_step_deg": 6.816014919730146,
+          "closure_mismatch_deg": 103.52250315001483,
+          "winding": -1.0,
+          "closure_assessed": true,
+          "median_step_deg": 1.5192115548135212,
+          "seam_step_deg": 102.91915805894381,
+          "old_max_step_deg": 31.82046016066977,
+          "changed_points": 50,
+          "inversion_roundtrip_max_error": 3.3306690738754696e-16,
+          "steps_across_invalid_gaps": 0
+        },
+        "geo_rms": 53.98182261414951
+      }
+    ]
+  },
+  "general": {
+    "case": "10pct",
+    "stats": [
+      {
+        "window": "30s",
+        "valid": 128,
+        "branch_audit": {
+          "valid": 128,
+          "max_step_deg": 5.367442813043419,
+          "closure_mismatch_deg": 0.0,
+          "winding": -2.0,
+          "closure_assessed": true,
+          "median_step_deg": 1.5385422031815805,
+          "seam_step_deg": 1.7217014265068893,
+          "old_max_step_deg": 5.367442813043419,
+          "changed_points": 0,
+          "inversion_roundtrip_max_error": 4.440892098500626e-16,
+          "steps_across_invalid_gaps": 0
+        },
+        "geo_rms": 2.944464555634622
+      },
+      {
+        "window": "10s",
+        "valid": 128,
+        "branch_audit": {
+          "valid": 128,
+          "max_step_deg": 5.70722255992895,
+          "closure_mismatch_deg": 8.537736462515939e-07,
+          "winding": -2.0,
+          "closure_assessed": true,
+          "median_step_deg": 1.57849371675279,
+          "seam_step_deg": 1.7030472680415367,
+          "old_max_step_deg": 5.70722255992895,
+          "changed_points": 0,
+          "inversion_roundtrip_max_error": 3.885780586188048e-16,
+          "steps_across_invalid_gaps": 0
+        },
+        "geo_rms": 3.4868271860983384
+      }
+    ]
+  },
+  "edge": {
+    "case": "10pct",
+    "stats": [
+      {
+        "window": "30s",
+        "valid": 128,
+        "branch_audit": {
+          "valid": 128,
+          "max_step_deg": 9.377169994385728,
+          "closure_mismatch_deg": 123.39789617214691,
+          "winding": -1.0000000000000002,
+          "closure_assessed": true,
+          "median_step_deg": 1.6221767103239229,
+          "seam_step_deg": 122.67759300425337,
+          "old_max_step_deg": 20.988258263208255,
+          "changed_points": 45,
+          "inversion_roundtrip_max_error": 4.440892098500626e-16,
+          "steps_across_invalid_gaps": 0
+        },
+        "geo_rms": 53.363393229774594
+      },
+      {
+        "window": "10s",
+        "valid": 128,
+        "branch_audit": {
+          "valid": 128,
+          "max_step_deg": 11.26376154220184,
+          "closure_mismatch_deg": 121.97805033724161,
+          "winding": -1.0000000000000002,
+          "closure_assessed": true,
+          "median_step_deg": 1.6768278671814856,
+          "seam_step_deg": 121.31952881816883,
+          "old_max_step_deg": 13.563934119542267,
+          "changed_points": 50,
+          "inversion_roundtrip_max_error": 4.440892098500626e-16,
+          "steps_across_invalid_gaps": 0
+        },
+        "geo_rms": 56.19708261336947
+      }
+    ]
+  },
+  "axial": {
+    "case": "10pct",
+    "stats": [
+      {
+        "window": "30s",
+        "valid": 128,
+        "branch_audit": {
+          "valid": 128,
+          "max_step_deg": 4.792837048039782,
+          "closure_mismatch_deg": 0.0,
+          "winding": -2.0,
+          "closure_assessed": true,
+          "median_step_deg": 1.7025649408865458,
+          "seam_step_deg": 1.7560024837203376,
+          "old_max_step_deg": 4.792837048039782,
+          "changed_points": 0,
+          "inversion_roundtrip_max_error": 6.106226635438361e-16,
+          "steps_across_invalid_gaps": 0
+        },
+        "geo_rms": 1.667996833102915
+      },
+      {
+        "window": "10s",
+        "valid": 128,
+        "branch_audit": {
+          "valid": 128,
+          "max_step_deg": 4.6428741855753035,
+          "closure_mismatch_deg": 0.0,
+          "winding": -2.0,
+          "closure_assessed": true,
+          "median_step_deg": 1.7047341653317523,
+          "seam_step_deg": 1.7480044030765294,
+          "old_max_step_deg": 4.6428741855753035,
+          "changed_points": 0,
+          "inversion_roundtrip_max_error": 5.134781488891349e-16,
+          "steps_across_invalid_gaps": 0
+        },
+        "geo_rms": 2.791424798453596
+      }
+    ]
+  }
+}

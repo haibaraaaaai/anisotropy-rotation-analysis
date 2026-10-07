@@ -1,0 +1,1718 @@
+[
+  [
+    [
+      "h",
+      "APD background and interference\nFit comparison for discussion with Richard"
+    ],
+    [
+      "p",
+      "Revised 6 October 2026 \u2022 Daping / Richard \u2022 Analysis of the supplied 40 s APD recording. This is a comparison of saved fits and sensitivity tests, not a calibration of absolute orientation. No new optimization was performed to prepare this report."
+    ],
+    [
+      "p",
+      "<b>Main result.</b> The inferred background and polar-angle range depend strongly on the allowed field. The earlier ~55% background solution is not uniquely required: a broader stationary-field model reaches similar agreement at 20\u201330%, and the tested axial-motion model reaches similar agreement at 10%. These explanations cannot yet be distinguished with this recording alone."
+    ],
+    [
+      "p",
+      "<b>What to discuss first.</b> Figures 1\u20132 show what the models actually fit; Figure 3 compares background makeup and angle ranges; Figure 5 shows how large background can coexist with the measured intensity through signed interference. The rest records the assumptions, controls and limits."
+    ],
+    [
+      "table",
+      [
+        "Model",
+        "BG / Tmax (%)\n30 s / 10 s",
+        "Held-out XY RMS\n30 s / 10 s",
+        "\u03b8 range (\u00b0)\n30\u201331 s",
+        "\u03b8 range (\u00b0)\n10\u201311 s"
+      ],
+      [
+        [
+          "BG only",
+          "31.7 / 34.6",
+          "0.0896 / 0.0989",
+          "37.3\u201389.2",
+          "42.0\u201390.0"
+        ],
+        [
+          "Additive + sqrt extension",
+          "38.5 / 39.9",
+          "0.0927 / 0.1024",
+          "34.6\u201389.9",
+          "39.0\u201389.7"
+        ],
+        [
+          "5-mode shared, relaxed",
+          "54.7 / 54.4",
+          "0.0281 / 0.0460",
+          "12.5\u201389.7",
+          "17.8\u201389.7"
+        ],
+        [
+          "General stationary, \u226430%",
+          "30.0 / 29.8",
+          "0.0288 / 0.0387",
+          "30.9\u201364.8",
+          "32.7\u201363.3"
+        ],
+        [
+          "General stationary, relaxed",
+          "55.0 / 54.7",
+          "0.0245 / 0.0408",
+          "6.4\u201389.7",
+          "11.6\u201389.8"
+        ],
+        [
+          "Axial R\u2264300 nm, \u226410%",
+          "10.0 / 9.9",
+          "0.0308 / 0.0411",
+          "34.6\u201355.2",
+          "37.2\u201353.7"
+        ]
+      ],
+      [
+        155,
+        82,
+        108,
+        70,
+        70
+      ]
+    ],
+    [
+      "p",
+      "Direct inversion without background gives \u03b8=27.4\u201357.7\u00b0 at 30\u201331 s and 26.9\u201357.0\u00b0 at 10\u201311 s. These are descriptive baselines, not known angles. All \u03b8 ranges are folded to 0\u201390\u00b0 and sampled at the 128 fitted bins; none is a confidence interval."
+    ],
+    [
+      "p",
+      "<b>Three conclusions supported by these calculations:</b> (i) simply changing the measured hole outline has very little effect in the tested pupil-mask model; (ii) the restricted hole-edge field tested here is insufficient; (iii) stationary-field structure and source position can trade against background power and recovered angles. A good cone fit alone cannot resolve that tradeoff."
+    ],
+    [
+      "p",
+      "<b>Stopping point.</b> Retain NA<sub>in</sub>=0.38 and the current correction matrix. Do not choose a final background subtraction or publish absolute \u03b8 from the best residual alone. Decide which physical constraint or perturbation is worth measuring next."
+    ]
+  ],
+  [
+    [
+      "h",
+      "1. What the plotted averages mean"
+    ],
+    [
+      "p",
+      "The plots compare repeated traversals of the same measured anisotropy trajectory, taken from two windows of the 40 s APD recording. Each traversal retains its acquisition order, including the two branches. Channel intensities are averaged first; X and Y are calculated afterwards."
+    ],
+    [
+      "table",
+      [
+        "Plot label",
+        "What it contains",
+        "How it is used"
+      ],
+      [
+        [
+          "Training average",
+          "One alternating set of complete traversals: cycles 1,3,5,\u2026",
+          "The model parameters are chosen using this average."
+        ],
+        [
+          "Held-out average",
+          "The other set: cycles 2,4,6,\u2026",
+          "The fitted prediction is compared with this average without refitting."
+        ],
+        [
+          "Fitted prediction",
+          "The four-channel forward model evaluated along its fitted cone",
+          "The same prediction is shown against both averages."
+        ]
+      ],
+      [
+        105,
+        230,
+        150
+      ]
+    ],
+    [
+      "table",
+      [
+        "Window",
+        "Training traversals",
+        "Held-out traversals"
+      ],
+      [
+        [
+          "30\u201331 s",
+          "152",
+          "152"
+        ],
+        [
+          "10\u201311 s",
+          "109",
+          "108"
+        ]
+      ],
+      [
+        165,
+        160,
+        160
+      ]
+    ],
+    [
+      "p",
+      "Both averages estimate the same trajectory within the same second. Agreement between them shows how reproducible the averaged curve is. A prediction that agrees with both is less likely to be following fluctuations peculiar to just one set. However, both sets share calibration, processing and any persistent distortion: this does not establish correct background or correct angles, and is not prediction of a new recording."
+    ],
+    [
+      "p",
+      "The broad two-pass shape repeats; the 10\u201311 s window is more internally consistent than 30\u201331 s. All anisotropy axes remain \u22121 to +1. The plotted convention is:"
+    ],
+    [
+      "eq",
+      "X=\\frac{I_0-I_{90}}{I_0+I_{90}},\\qquad Y=\\frac{I_{45}-I_{135}}{I_{45}+I_{135}}"
+    ],
+    [
+      "p",
+      "Fixed optical baseline: current gains and inverse T matrix, NA 0.38\u20131.30, water/oil indices 1.33/1.51, corrected Fresnel and BFP mapping. Detailed preprocessing and optimization records remain in the accompanying scripts; they are not needed to read these plots."
+    ]
+  ],
+  [
+    [
+      "h",
+      "2A. Common signal and power notation"
+    ],
+    [
+      "p",
+      "Here T means the sum of all four corrected channel intensities. S is rod-only intensity, B is background-only intensity, and C is the signed interference contribution. For every family:"
+    ],
+    [
+      "eq",
+      "I_j(\\chi)=S_j(\\chi)+C_j(\\chi)+B_j"
+    ],
+    [
+      "eq",
+      "T(\\chi)=\\sum_j I_j(\\chi)=S(\\chi)+C(\\chi)+B"
+    ],
+    [
+      "p",
+      "The instantaneous unit rod direction is d=(sin\u03b8 cos\u03c6, sin\u03b8 sin\u03c6, cos\u03b8), and \u03c7 labels position around the cone. In field equations \u03b8 describes that direction over 0\u2013180\u00b0; the reported angle plots fold it to 0\u201390\u00b0. This distinction preserves the sign of d_z when evaluating interference."
+    ],
+    [
+      "eq",
+      "E_{s,j}(u,\\chi)=a_0(d_x+i d_y)\\sum_{l=x,y,z}d_l F_{jl}(u)"
+    ],
+    [
+      "p",
+      "F is the fixed collected dipole field, including the optics. The one constant a\u2080 per interval sets the overall rod brightness. The factor d_x+i d_y=sin\u03b8 exp(i\u03c6) supplies the circular-excitation amplitude AND phase. It is not a freely chosen brightness at each point."
+    ],
+    [
+      "eq",
+      "S_j=a_0^2\\sin^2\\theta\\,q_j(\\theta,\\phi)"
+    ],
+    [
+      "eq",
+      "q_j=A_F+B_F\\sin^2\\theta+C_F\\sin^2\\theta\\cos[2(\\phi-\\psi_j)]"
+    ],
+    [
+      "eq",
+      "S(\\theta)=4a_0^2\\sin^2\\theta\\,(A_F+B_F\\sin^2\\theta)"
+    ],
+    [
+      "p",
+      "For the annulus, \u03c8_j=0\u00b0,90\u00b0,45\u00b0,135\u00b0; A_F=0.89080598, B_F=0.10919402, C_F=0.92778057. The F subscripts distinguish the optical coefficients from background B and interference C. The shared-field code evaluates the corresponding pupil integrals numerically. Individual signal channels vary with \u03b8 and \u03c6; their ideal annular sum varies with \u03b8 only."
+    ],
+    [
+      "p",
+      "<b>Constant versus varying:</b> a\u2080 and the optical response are constant within an interval. \u03b8 and \u03c6 vary along the cone. In all stationary-background families below, B_j and their sum B are constant; it is C_j and C that may change with orientation. A negative C reduces measured power without making S or B negative."
+    ],
+    [
+      "fit",
+      "Common to the physical cone fits",
+      "Per interval: motor-axis tilt and azimuth, cone half-angle (3); starting mechanical phase and monotone phase increments (16); one constant brightness scale a\u2080 (1). Total: 20 local real parameters per interval. Counts describe the parameterization, not a guarantee that every parameter is identifiable. Optical coefficients, NA, Fresnel/BFP response and the current gains/matrix are held fixed."
+    ]
+  ],
+  [
+    [
+      "h",
+      "2B. Additive backgrounds: notebook versus Stokes"
+    ],
+    [
+      "p",
+      "<b>The original notebook was less restrictive.</b> It fitted three background parameters, not four independent channel offsets:"
+    ],
+    [
+      "eq",
+      "(B_0,B_{90},B_{45},B_{135})=\\frac{d_c}{2}(1+f_a,1-f_a,1+f_b,1-f_b)"
+    ],
+    [
+      "eq",
+      "d_c\\geq0,\\qquad -1\\leq f_a\\leq1,\\qquad -1\\leq f_b\\leq1"
+    ],
+    [
+      "p",
+      "This guarantees nonnegative channel backgrounds and equal pair sums. The current Stokes version has the same algebra after the following substitution, but restricts the allowed region from a square to its inscribed disk:"
+    ],
+    [
+      "eq",
+      "B=2d_c,\\quad f_a=p\\cos(2\\alpha),\\quad f_b=p\\sin(2\\alpha),\\quad f_a^2+f_b^2\\leq1"
+    ],
+    [
+      "p",
+      "For example, f_a=f_b=1 is allowed by the notebook but excluded by a common physical Stokes background. Thus the two models agree inside the disk, but are not equivalent over their full allowed parameter ranges. Four fully independent offsets would be more general still because they need not have equal pair sums."
+    ],
+    [
+      "p",
+      "<b>1. Background only.</b> There is no modeled interference. Each channel has a constant additive intensity:"
+    ],
+    [
+      "eq",
+      "I_j=S_j+B_j,\\qquad C_j=0"
+    ],
+    [
+      "eq",
+      "T=4a_0^2\\sin^2\\theta(A_F+B_F\\sin^2\\theta)+B"
+    ],
+    [
+      "p",
+      "The background is represented by a positive Stokes intensity pattern. This allows a constant polarization imbalance without making any channel negative:"
+    ],
+    [
+      "eq",
+      "B_j=\\frac{B}{4}\\{1+p\\cos[2(\\psi_j-\\alpha)]\\},\\qquad 0\\leq p\\leq1"
+    ]
+  ],
+  [
+    [
+      "h",
+      "2B (continued). Meaning of the Stokes restriction"
+    ],
+    [
+      "p",
+      "This is a <b>common-background assumption</b>, not a universal law for all offsets. One optical background observed through ideal linear analyzers has Stokes parameters S\u2080,S\u2081,S\u2082 with nonnegative coherence matrix. Setting B=2S\u2080 gives:"
+    ],
+    [
+      "eq",
+      "B_j=\\frac12\\left[S_0+S_1\\cos(2\\psi_j)+S_2\\sin(2\\psi_j)\\right]"
+    ],
+    [
+      "eq",
+      "p=\\frac{\\sqrt{S_1^2+S_2^2}}{S_0}\\leq1,\\qquad B_0+B_{90}=B_{45}+B_{135}=B/2"
+    ],
+    [
+      "p",
+      "B, p and \u03b1 are constant. This permits polarized or unpolarized background while enforcing physical channel intensities and equal pair sums. \u201cPositive\u201d refers to the physical intensity/coherence matrix, not to requiring S\u2081 and S\u2082 individually to be positive. Circular Stokes S\u2083 is not measured by these linear analyzers. Electronic offsets, unequal detector acceptance, calibration errors or independent post-analyzer backgrounds need not satisfy this pattern; four independent nonnegative offsets would be a different model."
+    ],
+    [
+      "fit",
+      "Background only: fitted quantities",
+      "B, p, \u03b1 (3 background parameters), plus the 20 local cone/phase/brightness parameters: 23 per interval. C=0. Fits are separate in the two windows."
+    ],
+    [
+      "p",
+      "The original solver fitted cone geometry (3) plus d_c,f_a,f_b (3) against anisotropy shape. The current comparison also constrains ordered channels and total power with one a\u2080 per interval. Consequently its residual/angle differences cannot be attributed solely to the disk constraint. Saved legacy square-versus-disk controls exist, but no new controlled refit was run for this revision."
+    ]
+  ],
+  [
+    [
+      "h",
+      "2C. Richard\u2019s four-coefficient approximation"
+    ],
+    [
+      "p",
+      "The quoted email proposes a correction whose value changes with the real signal, but whose coefficient is constant within each channel:"
+    ],
+    [
+      "eq",
+      "I_{m,j}=I_{r,j}+D_j(I_{r,j}),\\qquad D_j(I_{r,j})=C_j\\sqrt{I_{r,j}}"
+    ],
+    [
+      "eq",
+      "T(\\theta,\\phi)=S(\\theta)+\\sum_j C_j\\sqrt{S_j(\\theta,\\phi)}"
+    ],
+    [
+      "fit",
+      "What Richard\u2019s quoted model fits",
+      "Four real coefficients C_j, one per channel. With our common fixed-excitation cone framework this would mean 4 correction parameters plus 20 local parameters = 24 per separately fitted interval. This exact four-coefficient model has NOT been run in the saved comparison."
+    ],
+    [
+      "p",
+      "The C_j can have either sign. They are constants in this approximation; D_j varies because the signal varies. Phase is not absent: phase and spatial overlap are absorbed into each C_j. For a fixed, perfectly matched single-mode background field of amplitude b_j, the full optical intensity is:"
+    ],
+    [
+      "eq",
+      "I_{m,j}=I_{r,j}+|b_j|^2+2|b_j|\\cos\\delta_j\\sqrt{I_{r,j}}"
+    ],
+    [
+      "eq",
+      "C_j=2|b_j|\\cos\\delta_j\\quad\\hbox{(matched single mode)}"
+    ],
+    [
+      "p",
+      "Writing C=2 cos(phase) requires the background amplitude to have been normalized to one or absorbed into the intensity units. Otherwise C has units of square-root intensity. With spatially integrated fields, the effective coefficient includes overlap and need not stay constant as rod orientation changes."
+    ],
+    [
+      "p",
+      "The quoted equation omits the background-only intensity |b_j|\u00b2. It therefore describes an approximation where that term is neglected, or a signal from which it has already been removed. It is not obtained by setting the background power to zero in a full coherent model: that would also remove the cross term."
+    ],
+    [
+      "p",
+      "For positive measured intensity, the nonnegative-amplitude solution is:"
+    ],
+    [
+      "eq",
+      "I_{r,j}=\\left[\\frac{-C_j+\\sqrt{C_j^2+4I_{m,j}}}{2}\\right]^2"
+    ],
+    [
+      "p",
+      "The email\u2019s suggested x,y,S\u2081,S\u2082 notation is a possible way to express four quantities; without its precise definitions it should not be equated with the three-parameter physical Stokes background used in 2B. The direct C_j representation avoids that ambiguity."
+    ]
+  ],
+  [
+    [
+      "h",
+      "2C (continued). The extension actually fitted"
+    ],
+    [
+      "p",
+      "The plots previously labeled \u201cRichard effective\u201d are from a different, seven-parameter background/interference model:"
+    ],
+    [
+      "eq",
+      "I_{m,j}=S_j+B_j+2c_j\\sqrt{B_jS_j},\\qquad |c_j|\\leq1"
+    ],
+    [
+      "eq",
+      "T=S+B+2\\sum_j c_j\\sqrt{B_jS_j}"
+    ],
+    [
+      "eq",
+      "C_j^{\\mathrm{eff}}=2c_j\\sqrt{B_j},\\qquad |C_j^{\\mathrm{eff}}|\\leq2\\sqrt{B_j}"
+    ],
+    [
+      "fit",
+      "Fitted quantities in the saved extension",
+      "Three constant Stokes-background parameters B,p,\u03b1 plus four constant real overlap coefficients c_j: 7, or 27 including the local cone/phase/brightness parameters, per interval. Coefficients and backgrounds were fitted separately in the two windows."
+    ],
+    [
+      "p",
+      "This is additive background plus an effective interference term. Relative phase and spatial overlap are folded into c_j rather than fitted separately. At a fixed c_j its interference magnitude follows \u221aS_j, and its channelwise sign is fixed; the total signed cross term may still change sign as channels vary."
+    ],
+    [
+      "p",
+      "The added B_j term and its bound on C_j distinguish this extension from Richard\u2019s quoted approximation. The extension reduces to the quoted mathematical form only after its additive B_j is removed from the measured intensity, with the remaining coefficient identified as C_j=2c_j\u221aB_j. That identification still retains constraints absent from a free four-C fit."
+    ],
+    [
+      "p",
+      "Neither four independent c_j nor the bound alone proves that one stationary vector field can realize them throughout a trajectory. In a coherent field model, the overlap may depend on orientation; treating it as constant is the approximation being tested."
+    ],
+    [
+      "p",
+      "All displayed fit scores, fitted background powers and angle ranges under the revised label \u201cAdditive + sqrt extension\u201d refer to this saved seven-parameter model. They cannot be used to claim that Richard\u2019s exact four-coefficient proposal has succeeded or failed. No new fits were run for this editorial correction."
+    ]
+  ],
+  [
+    [
+      "h",
+      "2D. Uniform field and uniform-plus-radial field"
+    ],
+    [
+      "p",
+      "<b>3. Uniform transverse background.</b> Let b_x and b_y be constant complex field amplitudes in normalized uniform pupil modes. Let U be the total extra noninterfering background. Then:"
+    ],
+    [
+      "eq",
+      "T=S(\\theta)+2(|b_x|^2+|b_y|^2)+U+C_{\\mathrm{uni}}(\\theta,\\phi)"
+    ],
+    [
+      "eq",
+      "C_{\\mathrm{uni}}=4a_0\\Gamma\\sin^2\\theta\\,\\mathrm{Re}\\{e^{i\\phi}(b_x^*\\cos\\phi+b_y^*\\sin\\phi)\\}"
+    ],
+    [
+      "p",
+      "\u0393 is the fixed overlap between the collected transverse dipole field and a normalized uniform pupil field, computed from the annulus/Fresnel/BFP optics. It is not an extra adjustable overlap at each point. Both complex b coefficients and U are constant. The cross term changes magnitude and can change sign through \u03b8 and \u03c6, even though the background field itself stays fixed."
+    ],
+    [
+      "fit",
+      "Uniform field: fitted quantities",
+      "Two complex amplitudes b_x,b_y (4 real values) and noninterfering Stokes parameters U,p_U,\u03b1_U (3): 7 background parameters, or 27 including local parameters, per interval. \u0393 is fixed by the optics."
+    ],
+    [
+      "p",
+      "<b>4. Uniform plus radial background.</b> Add the normalized collected field pattern of a z-directed dipole, with constant complex amplitude b_r:"
+    ],
+    [
+      "eq",
+      "T=S(\\theta)+2(|b_x|^2+|b_y|^2+|b_r|^2)+U+C_{\\mathrm{uni}}+C_{\\mathrm{rad}}"
+    ],
+    [
+      "eq",
+      "C_{\\mathrm{rad}}=8a_0\\kappa\\sin\\theta\\cos\\theta\\,\\mathrm{Re}(e^{i\\phi}b_r^*),\\qquad \\kappa=\\sqrt{A_F/2}"
+    ],
+    [
+      "p",
+      "The radial mode adds a different orientation dependence: sin\u03b8 cos\u03b8 times a \u03c6-dependent phase projection. Its intensity is still constant. In these normalized, mutually orthogonal pupil modes, summed coherent background power is twice the sum of squared field amplitudes. Cross terms between background modes need not vanish in every individual analyzer channel; they are retained in the channel calculation."
+    ],
+    [
+      "p",
+      "U is distributed across channels by the same positive Stokes form as above. \u201cNoninterfering\u201d means no cross term with the modeled rod signal: it can include incoherent light or a coherent field with no relevant spatial overlap. These expressions describe a background family, not a claim that a uniform or radial pattern came from a particular optical surface."
+    ],
+    [
+      "p",
+      "The separate-interval three-mode fits allow their field coefficients to change between windows. The shared three-mode test fixes the same coefficients and U across both windows, while each window retains its own cone and a\u2080. A budget cap changes the allowed power, not these equations."
+    ],
+    [
+      "fit",
+      "Uniform + radial: fitted quantities",
+      "Add complex b_r (2 real values): 9 background parameters. Separate fits have 29 parameters per interval; the shared three-mode fit has 9 shared plus 20 local per window, totaling 49. \u03ba is fixed by A_F."
+    ]
+  ],
+  [
+    [
+      "h",
+      "2E. Five modes, general stationary field and hole edge"
+    ],
+    [
+      "p",
+      "These families have the same power equation. They differ in which fixed spatial/polarization patterns g_m are available to form the background:"
+    ],
+    [
+      "eq",
+      "E_{b,j}(u)=\\sum_{m=1}^{M}b_m g_{jm}(u)"
+    ],
+    [
+      "eq",
+      "H^{\\Sigma}_{lm}=\\sum_j\\int F_{jl}(u)g_{jm}^*(u)\\,du"
+    ],
+    [
+      "eq",
+      "T=S(\\theta)+2\\sum_{m=1}^{M}|b_m|^2+U+C_M(\\theta,\\phi)"
+    ],
+    [
+      "eq",
+      "C_M=2a_0\\,\\mathrm{Re}\\!\\left[(d_x+i d_y)\\sum_{l,m}d_l H^{\\Sigma}_{lm}b_m^*\\right]"
+    ],
+    [
+      "p",
+      "The modes are orthonormal before analyzer projection, giving the factor 2 in total background power for this four-analyzer convention. H is a precomputed optical overlap, constant for a stationary source. The b_m and U are constant. Thus orientation changes C_M through the displayed products of direction components; no per-point overlap is fitted."
+    ],
+    [
+      "table",
+      [
+        "Family",
+        "Allowed background pattern",
+        "Final total-intensity form"
+      ],
+      [
+        [
+          "5-mode shared",
+          "Uniform x/y plus orthogonalized collected z-, x- and y-dipole patterns",
+          "T=S + 2\u03a3\u2081\u2075|b\u2098|\u00b2 + U + C\u2085"
+        ],
+        [
+          "General stationary",
+          "Each transverse polarization uses the five-dimensional scalar span of the collected dipole components (10 modes)",
+          "T=S + 2\u03a3\u2081\u00b9\u2070|b\u2098|\u00b2 + U + C\u2081\u2080"
+        ],
+        [
+          "Hole-edge surrogate",
+          "Two transverse polarizations \u00d7 three edge-localized angular patterns (6 modes)",
+          "T=S + 2\u03a3\u2081\u2076|b\u2098|\u00b2 + C\u2086; U=0"
+        ]
+      ],
+      [
+        100,
+        265,
+        120
+      ]
+    ],
+    [
+      "p",
+      "The edge patterns use exp[\u2212(\u03c1\u22120.38)\u00b2/(2w\u00b2)] times 1, cos\u03d5_u or sin\u03d5_u, then normalization/orthogonalization. Here \u03d5_u is pupil azimuth, not rod azimuth \u03c6. Width w is fixed for each tested case. The six complex amplitudes are shared across both windows, as are the five-/ten-mode coefficients in the corresponding shared fits."
+    ],
+    [
+      "p",
+      "For a stationary field, C_M is quadratic in d and has mechanical-phase harmonics only up to order two on the cone; S is quartic and can reach order four. Increasing the mode family changes the allowed quadratic coefficients, not the permission to choose an arbitrary C at every bin. The ten-mode completeness statement assumes a fixed-position ideal dipole, common pupil and full collection."
+    ],
+    [
+      "fit",
+      "Fitted quantities for each stationary family",
+      "Five-mode: 5 complex b_m plus U,p_U,\u03b1_U = 13 shared background parameters; 53 including both windows. General stationary: 10 complex b_m plus U,p_U,\u03b1_U = 23 shared; 63 total. Edge: 6 complex b_m = 12 shared; 52 total, with U fixed to zero. Mode shapes, overlaps and edge width w are fixed for each case; background caps are imposed limits, not fitted parameters."
+    ]
+  ],
+  [
+    [
+      "h",
+      "2F. Axial motion, mask and deliberately flexible controls"
+    ],
+    [
+      "p",
+      "<b>5. Bounded axial motion with a stationary background.</b> The ten background coefficients stay fixed. The rod position changes its phase relative to that field, so the optical overlap now depends on z:"
+    ],
+    [
+      "eq",
+      "z(\\chi)=R\\sin\\theta_{\\mathrm{axis}}\\cos(\\chi+\\delta),\\quad f(z)=[1+(z/z_R)^2]^{-1/2}"
+    ],
+    [
+      "eq",
+      "H^{\\Sigma}_{lm}(z)=\\sum_j\\int F_{jl}g_{jm}^*e^{ikz[n_w+\\sqrt{n_w^2-\\rho^2}]}\\,du"
+    ],
+    [
+      "eq",
+      "T=f(z)^2S(\\theta)+2\\sum_{m=1}^{10}|b_m|^2+U+C_{10}(\\theta,\\phi,z)"
+    ],
+    [
+      "eq",
+      "C_{10}=2a_0 f(z)\\,\\mathrm{Re}\\!\\left[e^{-i\\arctan(z/z_R)}(d_x+i d_y)\\sum_{l,m}d_l H^{\\Sigma}_{lm}(z)b_m^*\\right]"
+    ],
+    [
+      "p",
+      "R and \u03b4 are constants per interval; z_R=2 \u00b5m and k=2\u03c0/(633 nm) are fixed in these tests. Background intensity is still constant. \u03b8, \u03c6 and z vary together along the trajectory. The signal acquires f\u00b2; interference acquires f and a deterministically changing propagation/Gouy phase. There is no independent focus multiplier per point. The separate finite-aperture simulation changes collection itself and was not included in this fitted power equation."
+    ],
+    [
+      "fit",
+      "Axial motion: fitted quantities",
+      "The general field\u2019s 23 shared background parameters, 20 local parameters per window, and R,\u03b4 per window: 67 total. Radius cap, wavelength and z_R are fixed scenario settings."
+    ]
+  ],
+  [
+    [
+      "h",
+      "2F (continued). Mask and flexible controls"
+    ],
+    [
+      "p",
+      "<b>Measured-mask variant.</b> The mask changes the fixed signal response and overlaps, not the basic power balance:"
+    ],
+    [
+      "eq",
+      "T=a_0^2|d_x+i d_y|^2\\,\\mathbf{d}^{T}Q^{\\Sigma}_{\\mathrm{mask}}\\mathbf{d}+C_{\\mathrm{mask}}(\\mathbf{d})+B"
+    ],
+    [
+      "p",
+      "Q and H are recomputed through the measured aperture, and B remains constant. The asymmetric mask may introduce \u03c6 dependence even into rod-only total power. The mask fits used the three-mode background family; an amplitude mask does not model light scattered from the hole wall."
+    ],
+    [
+      "fit",
+      "Measured mask: fitted quantities",
+      "The same three complex field amplitudes and noninterfering Stokes background as the separate three-mode fits: 29 parameters per window. Mask geometry/rotation and the resulting Q,H are fixed in each comparison."
+    ],
+    [
+      "p",
+      "<b>Arbitrary-overlap feasibility control, not a stationary-field fit:</b>"
+    ],
+    [
+      "eq",
+      "T=S+B+2\\sum_j\\rho_j(\\chi)\\sqrt{S_j(\\chi)B_j},\\qquad |\\rho_j(\\chi)|\\leq1"
+    ],
+    [
+      "p",
+      "Here B_j stay constant but every \u03c1_j can vary independently at every point. That freedom can reproduce the data exactly without demonstrating one realizable stationary field. The earlier free-brightness models additionally replaced the prescribed a\u2080 sin\u03b8 by an independently recovered amplitude a(\u03c7):"
+    ],
+    [
+      "eq",
+      "T=a(\\chi)^2Q(\\theta,\\phi)+a(\\chi)L(\\theta,\\phi)+B"
+    ],
+    [
+      "p",
+      "Q is the summed collection response for unit excitation amplitude; L is the cross-term coefficient for the selected background family. These are historical relaxations, not the main fixed-excitation results."
+    ],
+    [
+      "fit",
+      "Flexible controls: what is adjustable",
+      "Free-overlap test: cone, phase and a\u2080 determine S; constant B_j are selected under scalar feasibility bounds (the 10% witness fixes equal B_j). Each \u03c1_j(\u03c7) is then constructed point by point to match I_j, rather than predicted by one field. Earlier free-brightness fits similarly recover a(\u03c7) from the measured total at every bin; this adds pointwise freedom even though those amplitudes are not independent optimizer coordinates."
+    ]
+  ],
+  [
+    [
+      "h",
+      "3. What the older model families can reproduce"
+    ],
+    [
+      "fig",
+      "01_model_fits",
+      6.65,
+      7.15
+    ],
+    [
+      "p",
+      "Figure 1. Points are held-out cycle averages; grey is the training average; red is the saved prediction. The additive and additive-plus-sqrt fits are separate per interval. The five-mode field uses the same absolute background coefficients in both intervals. All three use constant a\u2080 with circular-excitation dependence. The additive-plus-sqrt extension need not win on XY RMS because that is not the channel fitting objective."
+    ]
+  ],
+  [
+    [
+      "h",
+      "4. Comparable fits with smaller background budgets"
+    ],
+    [
+      "fig",
+      "02_low_background_fits",
+      6.65,
+      7.15
+    ],
+    [
+      "p",
+      "Figure 2. General stationary field at 10% and 30% caps, and the same ten-mode family with bounded axial motion at 10%. The last row is a sensitivity scenario, not evidence that the fitted motion actually occurs. These curves show why the earlier large-background estimate cannot be treated as a data-only requirement."
+    ]
+  ],
+  [
+    [
+      "h",
+      "5. Background makeup and the angle consequences"
+    ],
+    [
+      "fig",
+      "03_background_and_angles",
+      6.85,
+      3.35
+    ],
+    [
+      "p",
+      "Figure 3. Background is normalized to the maximum training total, T=\u2211I<sub>j</sub>. The decomposition bars show 30\u201331 s; exact values for both windows are tabulated in the appendix. Grey angle bands show direct inversion. Changing the field family changes \u03b8 substantially, not just the residual."
+    ],
+    [
+      "p",
+      "The five-mode shared relaxed fit has B/Tmax=54.72% / 54.43% (30 s / 10 s). Its coherent share is 91.82%, giving coherent power 50.25% / 49.97% of Tmax and noninterfering power 4.47% / 4.45%. In the general stationary and axial-motion selected fits, the residual Stokes component is effectively zero: essentially all fitted background is in the represented coherent field."
+    ],
+    [
+      "p",
+      "This split is conditional on the chosen mode space. \u201cNoninterfering\u201d can include light temporally incoherent with the rod, or coherent light spatially orthogonal to every signal mode being tested. Conversely, the represented coherent field can contain components with weak overlap at some orientations. Neither split assigns a percentage to coverslip, cell, objective or hole wall."
+    ],
+    [
+      "p",
+      "Historical \u201cabout 90\u201395% background\u201d referred to the <b>minimum</b> measured total in some earlier fits. It does not mean 90\u201395% of the maximum. Both denominators are reported in the appendix. Nor does B\u2248T at a dim point imply S\u22480 when C is negative: T=S+C+B, so destructive interference can conceal substantial rod-only power."
+    ],
+    [
+      "p",
+      "The unrestricted-overlap construction is deliberately excluded from these fitted-angle bars: it can reproduce the training curve exactly at a 10% background budget, but it chooses overlap independently at each point. That demonstrates feasibility under weak bounds, not a valid stationary-field correction or validated angle recovery."
+    ]
+  ],
+  [
+    [
+      "h",
+      "6. Power decomposition: why large background can survive"
+    ],
+    [
+      "fig",
+      "05_power_decomposition",
+      6.85,
+      5.5
+    ],
+    [
+      "p",
+      "Figure 5. All terms use the same Tmax normalization within each window. The rod-alone term obeys the one-a\u2080 excitation and collection law. The constant background and signed interference can compensate over substantial parts of the trajectory; the amount is not confined by an assumed positive \u201cinterference fraction.\u201d Exact per-bin values are in comparison.json."
+    ],
+    [
+      "p",
+      "This checks the proposed intensity consistency condition: the recovered \u03b8 and the rod-only intensity use the same forward model and scale. Passing that internal consistency check does not establish the true \u03b8, because cone geometry, field overlap and background were jointly chosen. The general 30% and moving-source 10% examples redistribute the same observed power differently."
+    ]
+  ],
+  [
+    [
+      "h",
+      "7. Angle variation along the trajectory"
+    ],
+    [
+      "fig",
+      "06_angle_traces",
+      6.85,
+      4.75
+    ],
+    [
+      "p",
+      "Figure 6. \u03b8 is folded to 0\u201390\u00b0. Azimuth differences are wrapped modulo 180\u00b0, with plot breaks at wrap discontinuities. These are comparisons at matched ordered bins, not errors relative to ground truth. Full \u03b8 and \u03c6 arrays, wrapped \u03c6 spans, and RMS differences from direct inversion are supplied in JSON/CSV."
+    ],
+    [
+      "p",
+      "The same measured curve admits fitted \u03b8 ranges extending almost to the equator in relaxed models, roughly 31\u201365\u00b0 at the 30% general stationary cap, or roughly 35\u201355\u00b0 in the 300 nm axial-motion scenario. Near-90\u00b0 solutions are especially sensitive to intensity/model errors. The evidence supports substantial angle ambiguity; it does not support choosing the narrowest or widest interval as more physical."
+    ],
+    [
+      "p",
+      "Do not interpret a wrapped \u03c6 minimum\u2013maximum as a continuous rotation amplitude. The modulo-180\u00b0 trace and branch-aware difference are the appropriate comparisons. A cone imposes continuity and a branch convention but does not add an independently known orientation."
+    ]
+  ],
+  [
+    [
+      "h",
+      "8. Stationary-field completeness and the budget tradeoff"
+    ],
+    [
+      "fig",
+      "04_fit_tradeoffs",
+      6.85,
+      2.8
+    ],
+    [
+      "p",
+      "Figure 4. Left: selected general stationary fits versus their background budget, with the previous relaxed five-mode fit marked \u00d7. Right: adding bounded axial motion at 10% background. The 10\u201311 s held-out residual need not decrease monotonically because optimization targets training channels, not held-out XY."
+    ],
+    [
+      "p",
+      "For a fixed-position ideal dipole, form the scalar span V of the x/y Cartesian components of its three collected dipole fields. Its numerical rank is five. Two transverse background components in V require ten complex coefficients. The Cartesian remainder is orthogonal to V: it has no interference with any signal orientation and no integrated cross term with the represented field. Its observable residual intensity is captured by three positive Stokes parameters."
+    ],
+    [
+      "p",
+      "This supplies a complete observation representation for a <b>stationary common-pupil field under the fixed-position, ideal-dipole, full-collection assumptions</b>. Ten is a sufficient mode count, not a count of physical scattering objects or uniquely identifiable coefficients. Basis-dependent modal powers should not be labeled as specific sources. Adding further stationary pupil modes cannot improve this ideal fixed-position model beyond that representation."
+    ],
+    [
+      "p",
+      "With the circular-excitation law, the stationary rod\u2013background cross term is quadratic in the direction d: on a fixed cone it contains mechanical-phase harmonics only through order two. Rod-only intensity is quartic and can contain order four. This restriction is why an arbitrary overlap at every bin is much more permissive than a stationary field."
+    ],
+    [
+      "p",
+      "The fit remains nonconvex in cone, phase and field parameters. Reported minima are feasible examples from the saved multistart searches, not proofs that a lower budget is impossible. Independent post-analyzer backgrounds, calibration errors, non-dipolar response, changing excitation and moving-source effects fall outside the completeness claim. Alternate-cycle agreement alone does not resolve them."
+    ]
+  ],
+  [
+    [
+      "h",
+      "9. Hole shape, localized scattering and bounded height"
+    ],
+    [
+      "fig",
+      "07_edge_and_focus",
+      6.85,
+      2.8
+    ],
+    [
+      "p",
+      "Figure 7. Left: six complex edge-field coefficients, shared across windows, with Gaussian radial envelope exp[\u2212(\u03c1\u22120.38)\u00b2/(2w\u00b2)] multiplied by 1, cos\u03d5, sin\u03d5 in each transverse polarization. Widths 0.03, 0.10 and 0.25 NA were tested. Narrow fields fit poorly; broader fields improve but become less specifically localized to the edge. The narrow 10% selected run reached its evaluation limit; it is not a converged exclusion result."
+    ],
+    [
+      "p",
+      "This is an effective low-order field family, not a Maxwell calculation of the drilled wall. Wall topography, coating, mirror tilt and distance from the true BFP are not known. It cannot rule out all hole scattering. Separately, using the thesis measured amplitude mask at four rotations changed held-out XY RMS by less than about 0.0002 in the three-mode comparisons. That tests pupil transmission shape, not edge scattering or out-of-BFP propagation."
+    ],
+    [
+      "p",
+      "Axial-motion model: z(\u03c7)=R sin(\u03b8<sub>axis</sub>)cos(\u03c7+\u03b4), with R and \u03b4 independent per window. R is not the rod-orientation cone radius or assumed rod length. Caps 50, 150 and 300 nm are sensitivity scenarios, not biological measurements. The 300 nm fits use R\u2248228 / 300 nm, but axial amplitudes only 40.7 / 43.0 nm (about 81 / 86 nm peak-to-peak). Boundary-hitting radii warn against treating them as recovered hook geometry."
+    ],
+    [
+      "p",
+      "The rod field acquires axial phase exp[i(2\u03c0/\u03bb)z(n<sub>w</sub>+\u221a(n<sub>w</sub>\u00b2\u2212\u03c1\u00b2))], \u03bb=633 nm, including incident and collected propagation. A Gaussian illumination with 2 \u00b5m Rayleigh range and its Gouy phase is assumed. At the selected amplitudes its intensity change is below 0.05%; phase-dependent interference, rather than brightness loss, drives most of this fitted improvement."
+    ],
+    [
+      "p",
+      "Only axial motion is modeled; lateral motion, uncertain mean height, interface-dependent rod response and finite APD acceptance are not fitted jointly. Once the source moves, the ten-mode background is a restricted family again; fixed-position completeness no longer applies. The separate pure-defocus aperture simulation on the right tests \u00b1300 nm and several orientations, without background. Full collection conserves power; clipping can alter \u03b8. These aperture radii are not calibrated APD sizes."
+    ]
+  ],
+  [
+    [
+      "h",
+      "10. Physical interpretation and the useful stopping line"
+    ],
+    [
+      "p",
+      "<b>Background categories from Richard\u2019s correspondence.</b> External optical reflections/scattering can carry arbitrary phase and spatial structure. Ideal coverslip reflection should leave through the central hole. Any reflected light that remains after bouncing or scattering need not retain a simple circular-polarization phase relation. Cell scattering can come from different heights and different polarization components; nearby rods add sample-associated fields. The APD integrates their overlap, so equal source position for the rod does not imply equal interference phase in all channels."
+    ],
+    [
+      "p",
+      "Multiple mutually coherent stationary backgrounds add as fields before squaring. If they lie in the same allowed mode space, fitting two copies does not add a new observation model; it only makes the decomposition redundant. Mutually incoherent contributions add intensities. More sources become observationally distinct when they add new spatial/polarization modes, different coherence, motion or a response to an experimental perturbation. Their source locations cannot generally be inferred from one steady four-channel trajectory."
+    ],
+    [
+      "p",
+      "Fresnel transmission, BFP mapping and the hole act on fields along the optical path; a source should enter where it is generated. After propagation to one common detection plane, the background can be represented there for this effective model. Intensity subtraction is not generally a commuting substitute for coherent propagation. The present fits do not identify which optical surface produced the effective field."
+    ],
+    [
+      "p",
+      "<b>What the existing data can do:</b> reject or expose poor versions of restricted model families; show budget\u2013angle sensitivity; check shared-field consistency across windows; quantify registration and chronological variation; test whether physically linked terms reproduce channels as well as the outline. It cannot establish unique absolute \u03b8, actual coherent source fractions, APD acceptance, or true centre motion without additional constraints."
+    ],
+    [
+      "p",
+      "<b>Priority discussion with Richard:</b> which perturbation best separates stationary optical field from sample-associated field in this APD setup? An axial stage scan/modulation with four-channel acquisition is especially direct, provided rod orientation, position and exposure averaging are tracked. It can constrain a phase-dependent cross term; it is not automatically an exact background subtraction."
+    ],
+    [
+      "p",
+      "Fixed-rod files can quantify temporal stability, channel covariance, spectra and response to laser-power steps. Flat intensity alone cannot bound a static coherent background. A nearly constant-\u03b8 rotating rod can test azimuth-dependent power and shared-field predictions, but its circular anisotropy provides less leverage for separating additive scale/background. These are useful controls, not substitutes for known-angle truth."
+    ],
+    [
+      "p",
+      "Other discriminating measurements are dark electronic offsets, a current transmission/mixing calibration, effective APD acceptance/defocus scans, and centre-position tracking. The sensible next step is to pick one or two constraints, not add another unconstrained per-bin term. A synthetic injection/recovery study can characterize an estimator under assumed models, but would not decide which model describes this old sample."
+    ]
+  ],
+  [
+    [
+      "h",
+      "11. Source limits, verification and reproducible record"
+    ],
+    [
+      "p",
+      "<b>Bearing paper and SI.</b> The supplied manuscript and supplementary-information (1).pdf describe deliberately selected near-axis rods with overlapping loops, fewer than 10% of candidates. Do not transfer that geometry or biological conclusions to ordinary BFM samples. SI S1 documents the drilled mirror near an inaccessible BFP, hole-wall scattering, polarization/alignment issues and APD alignment. SI p5 transmission/extinction values are historical, not a current calibration. Fixed-rod noise measurements and manual azimuth tests establish precision/\u03c6 behavior, not exact \u03b8 or a coherent-background bound."
+    ],
+    [
+      "p",
+      "<b>Polarcam draft and SI.</b> Polarcam Manuscript V2 2026-09-08 RB.docx, SI outline.docx and RB Figs V2.docx were reviewed separately. Their camera background values, compensation optics, exposure/modulation behavior and some placeholder numbers are not transferred to this APD data. Axial modulation and lateral minimum projection motivate discriminating tests but require their own assumptions. APD on the Polarcam setup is not the bearing-paper APD setup."
+    ],
+    [
+      "p",
+      "<b>Thesis and optical sources.</b> Thesis sections 1.5\u20131.8 and its measured mirror mask supplied optical context; mask provenance is thesis commit 7576b50, analysis/image_mirror_binary.tif. The active baseline remains NA<sub>in</sub>=0.38. Original notebook fitting history was recovered from repository import 9b3604e. The model conventions and dated source notes accompany the scripts. General pupil-phase context: https://pmc.ncbi.nlm.nih.gov/articles/PMC5810908/ ; the present calculation uses water-side propagation with the existing water\u2013oil transmission."
+    ],
+    [
+      "p",
+      "<b>Numerical checks.</b> This report reconstructs and checks 46 model/window predictions against saved residuals and checks S+C+B consistency. Earlier checks reproduce all 15 saved edge/general/height comparisons; arbitrary fixed-field overlap projection error is about 2.9\u00d710\u207b\u00b9\u2076; pupil refinement changes channels by about 1.2\u00d710\u207b\u2074 for general fields and 7.2\u00d710\u207b\u2074 for the narrow edge family; checked axial interpolation error is about 5.3\u00d710\u207b\u2077. These are numerical checks, not experimental accuracy bounds."
+    ],
+    [
+      "p",
+      "The best narrow-edge 10% run has success=false at 600 function evaluations. Other selected runs in the principal table meet their optimizer termination criteria. Several caps/radius constraints are active, and multistart optimization does not certify global minima. No information criterion or formal confidence interval is claimed: correlated bins, estimated registration and unknown error covariance make naive parameter-count significance unreliable."
+    ],
+    [
+      "p",
+      "<b>Reproduction.</b> comparison.csv is a compact numerical table; comparison.json includes per-bin predictions, signal/interference/background decomposition, training/test arrays and angles. build_data.py reconstructs results; plot_figures.py draws seven PNG/SVG figure sets; build_report.py creates this PDF and editable Word document. The study archive preserves earlier scripts, fit parameters, cached averages, optical inputs and dated notes. Replotting cached results does not require the large raw TDMS. Reprocessing and refitting require their documented data paths and dependencies."
+    ],
+    [
+      "p",
+      "No future Codex handoff script is included yet. The code and dated record are the current milestone; the report is intended to settle the scientific next step before extending the model."
+    ]
+  ],
+  [
+    [
+      "h",
+      "Appendix A \u00b7 30\u201331 s: fit quality and angles"
+    ],
+    [
+      "table",
+      [
+        "Model",
+        "XY RMS",
+        "Channel\nRMS %",
+        "Total\nRMS %",
+        "\u03b8 span (\u00b0)",
+        "\u03c6 RMS vs\ndirect (\u00b0)",
+        "Param."
+      ],
+      [
+        [
+          "Background only",
+          "0.0896",
+          "2.29",
+          "5.81",
+          "37.3\u201389.2",
+          "17.5",
+          "23 L"
+        ],
+        [
+          "Additive + sqrt extension",
+          "0.0927",
+          "2.14",
+          "4.80",
+          "34.6\u201389.9",
+          "18.2",
+          "27 L"
+        ],
+        [
+          "Uniform field (2 modes)",
+          "0.0538",
+          "1.05",
+          "2.25",
+          "11.3\u201390.0",
+          "41.4",
+          "27 L"
+        ],
+        [
+          "Uniform + radial (3 modes)",
+          "0.0317",
+          "0.60",
+          "0.98",
+          "11.9\u201389.9",
+          "39.7",
+          "29 L"
+        ],
+        [
+          "3-mode shared / relaxed",
+          "0.0336",
+          "0.65",
+          "1.26",
+          "11.1\u201389.8",
+          "40.3",
+          "49 S"
+        ],
+        [
+          "3-mode shared / 10% cap",
+          "0.0950",
+          "2.15",
+          "4.88",
+          "26.6\u201353.9",
+          "19.3",
+          "49 S"
+        ],
+        [
+          "5-mode shared / relaxed",
+          "0.0281",
+          "0.59",
+          "1.15",
+          "12.5\u201389.7",
+          "41.5",
+          "53 S"
+        ],
+        [
+          "5-mode shared / 10% cap",
+          "0.0930",
+          "2.11",
+          "4.75",
+          "26.4\u201353.8",
+          "19.5",
+          "53 S"
+        ],
+        [
+          "Edge w=0.03 / 10% cap",
+          "0.1175",
+          "2.66",
+          "5.97",
+          "36.2\u201357.3",
+          "16.8",
+          "52 S *"
+        ],
+        [
+          "Edge w=0.03 / relaxed",
+          "0.0953",
+          "2.03",
+          "4.63",
+          "33.7\u201388.6",
+          "19.5",
+          "52 S"
+        ],
+        [
+          "Edge w=0.1 / 10% cap",
+          "0.1082",
+          "2.45",
+          "5.53",
+          "34.5\u201356.5",
+          "18.7",
+          "52 S"
+        ],
+        [
+          "Edge w=0.1 / relaxed",
+          "0.0871",
+          "1.87",
+          "4.39",
+          "35.8\u201379.6",
+          "21.3",
+          "52 S"
+        ],
+        [
+          "Edge w=0.25 / 10% cap",
+          "0.0843",
+          "1.93",
+          "4.50",
+          "33.1\u201355.4",
+          "20.0",
+          "52 S"
+        ],
+        [
+          "Edge w=0.25 / relaxed",
+          "0.0624",
+          "1.36",
+          "3.23",
+          "36.7\u201366.7",
+          "25.8",
+          "52 S"
+        ],
+        [
+          "General stationary / 10% cap",
+          "0.0490",
+          "1.06",
+          "2.74",
+          "33.9\u201354.3",
+          "26.0",
+          "63 S"
+        ],
+        [
+          "General stationary / relaxed",
+          "0.0245",
+          "0.49",
+          "0.87",
+          "6.4\u201389.7",
+          "42.6",
+          "63 S"
+        ],
+        [
+          "General stationary / 20% cap",
+          "0.0314",
+          "0.67",
+          "1.52",
+          "35.4\u201361.0",
+          "31.6",
+          "63 S"
+        ],
+        [
+          "General stationary / 30% cap",
+          "0.0288",
+          "0.62",
+          "1.36",
+          "30.9\u201364.8",
+          "34.2",
+          "63 S"
+        ],
+        [
+          "Height R\u226450 nm / 10%",
+          "0.0445",
+          "0.94",
+          "2.40",
+          "34.3\u201354.8",
+          "26.1",
+          "67 S"
+        ],
+        [
+          "Height R\u2264150 nm / 10%",
+          "0.0366",
+          "0.75",
+          "1.80",
+          "33.8\u201356.2",
+          "27.0",
+          "67 S"
+        ],
+        [
+          "Height R\u2264300 nm / 10%",
+          "0.0308",
+          "0.64",
+          "1.39",
+          "34.6\u201355.2",
+          "28.5",
+          "67 S"
+        ]
+      ],
+      [
+        171,
+        48,
+        50,
+        48,
+        67,
+        59,
+        42
+      ]
+    ],
+    [
+      "p",
+      "Channel and total RMS use residual divided by observed total at each bin; channel RMS is not relative to each channel individually. \u03b8 span covers the sampled fitted orientations. \u03c6 differences use modulo 180\u00b0. S = total parameters in the joint two-window fit; L = parameters in this separate single-window fit. * = selected run reached its evaluation limit. Numeric termination does not establish global optimality."
+    ],
+    [
+      "p",
+      "Direct no-background inversion is not a fitted cone and has no fitted prediction score here. All historical and verified duplicates are retained in comparison.json/CSV. Early free-brightness and arbitrary-overlap constructions are not comparable predictive models and are intentionally kept outside this table."
+    ]
+  ],
+  [
+    [
+      "h",
+      "Appendix B \u00b7 30\u201331 s: background composition"
+    ],
+    [
+      "table",
+      [
+        "Model",
+        "All BG\n% Tmax",
+        "All BG\n% Tmin",
+        "Coherent\n% Tmax",
+        "Residual\n% Tmax",
+        "Channel BG % Tmax\n0 / 90 / 45 / 135"
+      ],
+      [
+        [
+          "Background only",
+          "31.74",
+          "54.07",
+          "0.0",
+          "31.7",
+          "9.3/6.6/4.7/11.1"
+        ],
+        [
+          "Additive + sqrt extension",
+          "38.51",
+          "65.60",
+          "\u2014",
+          "\u2014",
+          "13.5/5.7/9.1/10.2"
+        ],
+        [
+          "Uniform field (2 modes)",
+          "55.77",
+          "95.00",
+          "46.8",
+          "9.0",
+          "15.4/12.5/10.4/17.5"
+        ],
+        [
+          "Uniform + radial (3 modes)",
+          "51.57",
+          "87.85",
+          "44.9",
+          "6.6",
+          "16.1/9.7/9.7/16.0"
+        ],
+        [
+          "3-mode shared / relaxed",
+          "53.05",
+          "90.37",
+          "46.2",
+          "6.9",
+          "16.8/9.7/9.9/16.7"
+        ],
+        [
+          "3-mode shared / 10% cap",
+          "10.00",
+          "17.04",
+          "4.3",
+          "5.7",
+          "4.2/0.8/1.3/3.7"
+        ],
+        [
+          "5-mode shared / relaxed",
+          "54.72",
+          "93.23",
+          "50.3",
+          "4.5",
+          "17.9/9.4/10.6/16.7"
+        ],
+        [
+          "5-mode shared / 10% cap",
+          "10.00",
+          "17.04",
+          "5.5",
+          "4.5",
+          "4.1/0.9/1.5/3.5"
+        ],
+        [
+          "Edge w=0.03 / 10% cap",
+          "10.00",
+          "17.04",
+          "10.0",
+          "0.0",
+          "3.5/1.5/0.4/4.6"
+        ],
+        [
+          "Edge w=0.03 / relaxed",
+          "34.90",
+          "59.46",
+          "34.9",
+          "0.0",
+          "11.5/5.9/6.7/10.8"
+        ],
+        [
+          "Edge w=0.1 / 10% cap",
+          "10.00",
+          "17.04",
+          "10.0",
+          "0.0",
+          "4.1/0.9/1.0/4.0"
+        ],
+        [
+          "Edge w=0.1 / relaxed",
+          "31.90",
+          "54.35",
+          "31.9",
+          "0.0",
+          "10.9/5.1/5.8/10.2"
+        ],
+        [
+          "Edge w=0.25 / 10% cap",
+          "10.00",
+          "17.04",
+          "10.0",
+          "0.0",
+          "4.3/0.7/1.3/3.7"
+        ],
+        [
+          "Edge w=0.25 / relaxed",
+          "25.63",
+          "43.66",
+          "25.6",
+          "0.0",
+          "9.8/3.1/4.0/8.8"
+        ],
+        [
+          "General stationary / 10% cap",
+          "10.00",
+          "17.04",
+          "10.0",
+          "0.0",
+          "4.1/0.9/1.3/3.7"
+        ],
+        [
+          "General stationary / relaxed",
+          "55.04",
+          "93.76",
+          "55.0",
+          "0.0",
+          "17.3/10.3/11.3/16.3"
+        ],
+        [
+          "General stationary / 20% cap",
+          "20.00",
+          "34.07",
+          "20.0",
+          "0.0",
+          "9.0/1.0/3.0/7.0"
+        ],
+        [
+          "General stationary / 30% cap",
+          "30.00",
+          "51.11",
+          "30.0",
+          "0.0",
+          "12.2/2.8/4.3/10.7"
+        ],
+        [
+          "Height R\u226450 nm / 10%",
+          "10.00",
+          "17.04",
+          "10.0",
+          "0.0",
+          "4.1/0.9/1.3/3.7"
+        ],
+        [
+          "Height R\u2264150 nm / 10%",
+          "10.00",
+          "17.04",
+          "10.0",
+          "0.0",
+          "4.0/1.0/1.0/4.0"
+        ],
+        [
+          "Height R\u2264300 nm / 10%",
+          "10.00",
+          "17.04",
+          "10.0",
+          "0.0",
+          "3.8/1.2/0.9/4.1"
+        ]
+      ],
+      [
+        172,
+        50,
+        50,
+        57,
+        55,
+        101
+      ]
+    ],
+    [
+      "p",
+      "Tmax and Tmin are from the training total within this window. Channel entries sum to all BG up to rounding. Coherent/residual components are nonnegative fitted powers; interference is signed and reported separately in Figure 5 and comparison.json. A dash means the effective model does not identify that split. Near-zero residual components are rounded to 0.0%; this is a model-dependent boundary solution, not proof that all real background is coherent."
+    ],
+    [
+      "p",
+      "Shared-field coefficients are identical in absolute units between windows. Their percentages differ because the observed maxima/minima differ. The background is constant along each fitted trajectory; it is the signal\u2013background cross term that varies with orientation and, in the height scenario, position."
+    ]
+  ],
+  [
+    [
+      "h",
+      "Appendix A \u00b7 10\u201311 s: fit quality and angles"
+    ],
+    [
+      "table",
+      [
+        "Model",
+        "XY RMS",
+        "Channel\nRMS %",
+        "Total\nRMS %",
+        "\u03b8 span (\u00b0)",
+        "\u03c6 RMS vs\ndirect (\u00b0)",
+        "Param."
+      ],
+      [
+        [
+          "Background only",
+          "0.0989",
+          "2.56",
+          "6.66",
+          "42.0\u201390.0",
+          "19.5",
+          "23 L"
+        ],
+        [
+          "Additive + sqrt extension",
+          "0.1024",
+          "2.41",
+          "4.95",
+          "39.0\u201389.7",
+          "18.2",
+          "27 L"
+        ],
+        [
+          "Uniform field (2 modes)",
+          "0.0709",
+          "1.30",
+          "1.69",
+          "15.6\u201389.7",
+          "41.8",
+          "27 L"
+        ],
+        [
+          "Uniform + radial (3 modes)",
+          "0.0495",
+          "1.01",
+          "1.76",
+          "15.2\u201390.0",
+          "42.7",
+          "29 L"
+        ],
+        [
+          "3-mode shared / relaxed",
+          "0.0509",
+          "1.04",
+          "1.69",
+          "16.1\u201389.9",
+          "41.7",
+          "49 S"
+        ],
+        [
+          "3-mode shared / 10% cap",
+          "0.1040",
+          "2.36",
+          "4.86",
+          "29.2\u201352.1",
+          "18.9",
+          "49 S"
+        ],
+        [
+          "5-mode shared / relaxed",
+          "0.0460",
+          "0.98",
+          "1.68",
+          "17.8\u201389.7",
+          "42.4",
+          "53 S"
+        ],
+        [
+          "5-mode shared / 10% cap",
+          "0.1019",
+          "2.32",
+          "4.78",
+          "29.0\u201352.0",
+          "19.1",
+          "53 S"
+        ],
+        [
+          "Edge w=0.03 / 10% cap",
+          "0.1357",
+          "3.14",
+          "6.60",
+          "37.9\u201354.2",
+          "17.7",
+          "52 S *"
+        ],
+        [
+          "Edge w=0.03 / relaxed",
+          "0.0924",
+          "2.17",
+          "4.76",
+          "39.5\u201390.0",
+          "18.7",
+          "52 S"
+        ],
+        [
+          "Edge w=0.1 / 10% cap",
+          "0.1202",
+          "2.79",
+          "5.76",
+          "36.9\u201353.7",
+          "17.9",
+          "52 S"
+        ],
+        [
+          "Edge w=0.1 / relaxed",
+          "0.0802",
+          "1.97",
+          "4.62",
+          "41.8\u201378.6",
+          "20.9",
+          "52 S"
+        ],
+        [
+          "Edge w=0.25 / 10% cap",
+          "0.0923",
+          "2.19",
+          "4.72",
+          "35.5\u201352.9",
+          "19.3",
+          "52 S"
+        ],
+        [
+          "Edge w=0.25 / relaxed",
+          "0.0525",
+          "1.48",
+          "3.96",
+          "40.4\u201364.1",
+          "25.7",
+          "52 S"
+        ],
+        [
+          "General stationary / 10% cap",
+          "0.0514",
+          "1.33",
+          "3.62",
+          "35.8\u201352.8",
+          "26.0",
+          "63 S"
+        ],
+        [
+          "General stationary / relaxed",
+          "0.0408",
+          "0.91",
+          "1.92",
+          "11.6\u201389.8",
+          "43.1",
+          "63 S"
+        ],
+        [
+          "General stationary / 20% cap",
+          "0.0393",
+          "1.03",
+          "2.65",
+          "36.0\u201360.0",
+          "34.7",
+          "63 S"
+        ],
+        [
+          "General stationary / 30% cap",
+          "0.0387",
+          "0.99",
+          "2.47",
+          "32.7\u201363.3",
+          "38.3",
+          "63 S"
+        ],
+        [
+          "Height R\u226450 nm / 10%",
+          "0.0491",
+          "1.24",
+          "3.24",
+          "36.4\u201353.4",
+          "26.1",
+          "67 S"
+        ],
+        [
+          "Height R\u2264150 nm / 10%",
+          "0.0433",
+          "1.10",
+          "2.76",
+          "36.4\u201354.6",
+          "27.1",
+          "67 S"
+        ],
+        [
+          "Height R\u2264300 nm / 10%",
+          "0.0411",
+          "0.99",
+          "2.19",
+          "37.2\u201353.7",
+          "27.9",
+          "67 S"
+        ]
+      ],
+      [
+        171,
+        48,
+        50,
+        48,
+        67,
+        59,
+        42
+      ]
+    ],
+    [
+      "p",
+      "Channel and total RMS use residual divided by observed total at each bin; channel RMS is not relative to each channel individually. \u03b8 span covers the sampled fitted orientations. \u03c6 differences use modulo 180\u00b0. S = total parameters in the joint two-window fit; L = parameters in this separate single-window fit. * = selected run reached its evaluation limit. Numeric termination does not establish global optimality."
+    ],
+    [
+      "p",
+      "Direct no-background inversion is not a fitted cone and has no fitted prediction score here. All historical and verified duplicates are retained in comparison.json/CSV. Early free-brightness and arbitrary-overlap constructions are not comparable predictive models and are intentionally kept outside this table."
+    ]
+  ],
+  [
+    [
+      "h",
+      "Appendix B \u00b7 10\u201311 s: background composition"
+    ],
+    [
+      "table",
+      [
+        "Model",
+        "All BG\n% Tmax",
+        "All BG\n% Tmin",
+        "Coherent\n% Tmax",
+        "Residual\n% Tmax",
+        "Channel BG % Tmax\n0 / 90 / 45 / 135"
+      ],
+      [
+        [
+          "Background only",
+          "34.62",
+          "55.81",
+          "0.0",
+          "34.6",
+          "9.8/7.5/4.7/12.6"
+        ],
+        [
+          "Additive + sqrt extension",
+          "39.93",
+          "64.38",
+          "\u2014",
+          "\u2014",
+          "14.0/6.0/9.8/10.2"
+        ],
+        [
+          "Uniform field (2 modes)",
+          "58.92",
+          "95.00",
+          "45.6",
+          "13.3",
+          "17.1/12.3/10.5/19.0"
+        ],
+        [
+          "Uniform + radial (3 modes)",
+          "55.34",
+          "89.23",
+          "47.9",
+          "7.4",
+          "17.6/10.1/10.1/17.6"
+        ],
+        [
+          "3-mode shared / relaxed",
+          "52.76",
+          "85.07",
+          "45.9",
+          "6.8",
+          "16.7/9.7/9.8/16.6"
+        ],
+        [
+          "3-mode shared / 10% cap",
+          "9.95",
+          "16.04",
+          "4.3",
+          "5.7",
+          "4.2/0.8/1.3/3.6"
+        ],
+        [
+          "5-mode shared / relaxed",
+          "54.43",
+          "87.75",
+          "50.0",
+          "4.4",
+          "17.8/9.4/10.6/16.7"
+        ],
+        [
+          "5-mode shared / 10% cap",
+          "9.95",
+          "16.04",
+          "5.5",
+          "4.5",
+          "4.1/0.9/1.5/3.5"
+        ],
+        [
+          "Edge w=0.03 / 10% cap",
+          "9.95",
+          "16.04",
+          "9.9",
+          "0.0",
+          "3.4/1.5/0.4/4.6"
+        ],
+        [
+          "Edge w=0.03 / relaxed",
+          "34.71",
+          "55.97",
+          "34.7",
+          "0.0",
+          "11.5/5.9/6.6/10.7"
+        ],
+        [
+          "Edge w=0.1 / 10% cap",
+          "9.95",
+          "16.04",
+          "9.9",
+          "0.0",
+          "4.1/0.9/1.0/3.9"
+        ],
+        [
+          "Edge w=0.1 / relaxed",
+          "31.73",
+          "51.16",
+          "31.7",
+          "0.0",
+          "10.8/5.0/5.7/10.1"
+        ],
+        [
+          "Edge w=0.25 / 10% cap",
+          "9.95",
+          "16.04",
+          "9.9",
+          "0.0",
+          "4.3/0.7/1.3/3.7"
+        ],
+        [
+          "Edge w=0.25 / relaxed",
+          "25.49",
+          "41.10",
+          "25.5",
+          "0.0",
+          "9.7/3.0/3.9/8.8"
+        ],
+        [
+          "General stationary / 10% cap",
+          "9.95",
+          "16.04",
+          "9.9",
+          "0.0",
+          "4.1/0.9/1.2/3.7"
+        ],
+        [
+          "General stationary / relaxed",
+          "54.73",
+          "88.25",
+          "54.7",
+          "0.0",
+          "17.2/10.2/11.2/16.2"
+        ],
+        [
+          "General stationary / 20% cap",
+          "19.89",
+          "32.07",
+          "19.9",
+          "0.0",
+          "9.0/0.9/3.0/6.9"
+        ],
+        [
+          "General stationary / 30% cap",
+          "29.84",
+          "48.11",
+          "29.8",
+          "0.0",
+          "12.2/2.8/4.3/10.6"
+        ],
+        [
+          "Height R\u226450 nm / 10%",
+          "9.95",
+          "16.04",
+          "9.9",
+          "0.0",
+          "4.1/0.9/1.3/3.7"
+        ],
+        [
+          "Height R\u2264150 nm / 10%",
+          "9.95",
+          "16.04",
+          "9.9",
+          "0.0",
+          "4.0/1.0/1.0/4.0"
+        ],
+        [
+          "Height R\u2264300 nm / 10%",
+          "9.95",
+          "16.04",
+          "9.9",
+          "0.0",
+          "3.8/1.2/0.9/4.0"
+        ]
+      ],
+      [
+        172,
+        50,
+        50,
+        57,
+        55,
+        101
+      ]
+    ],
+    [
+      "p",
+      "Tmax and Tmin are from the training total within this window. Channel entries sum to all BG up to rounding. Coherent/residual components are nonnegative fitted powers; interference is signed and reported separately in Figure 5 and comparison.json. A dash means the effective model does not identify that split. Near-zero residual components are rounded to 0.0%; this is a model-dependent boundary solution, not proof that all real background is coherent."
+    ],
+    [
+      "p",
+      "Shared-field coefficients are identical in absolute units between windows. Their percentages differ because the observed maxima/minima differ. The background is constant along each fitted trajectory; it is the signal\u2013background cross term that varies with orientation and, in the height scenario, position."
+    ]
+  ]
+]

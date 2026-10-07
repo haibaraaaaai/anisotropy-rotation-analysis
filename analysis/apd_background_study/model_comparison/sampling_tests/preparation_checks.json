@@ -1,0 +1,72 @@
+{
+  "30s": {
+    "raw_invalid_fraction": 0.0,
+    "guide_cycles_valid": 304,
+    "cycles_total": 304,
+    "used_cycles": 304,
+    "train_cycles": 152,
+    "test_cycles": 152,
+    "rmax": 0.9277805723143716,
+    "training_mean_r_range": [
+      0.2154822462161547,
+      0.6846165063048776
+    ],
+    "training_mean_winding": -1,
+    "guide_plane_half_angle_deg": 44.11056120010947,
+    "guide_plane_rms": 0.12169619310184084,
+    "guide_phase_span_turns_quantiles": [
+      -1.5404838512110195,
+      -0.5381715872647825,
+      -0.5336381726391081,
+      -0.5296533887319931
+    ],
+    "guide_backtracking_fraction_quantiles": [
+      0.09365861452243801,
+      0.561384524926632,
+      0.8805781163391385,
+      1.867561920484949
+    ],
+    "isotonic_max_fraction_change_quantiles": [
+      0.010270398943600656,
+      0.1502302624248985,
+      0.2830122430792695,
+      0.701745592940154
+    ],
+    "uniform_reference_step_cv": 0.014958802234414776
+  },
+  "10s": {
+    "raw_invalid_fraction": 0.0,
+    "guide_cycles_valid": 217,
+    "cycles_total": 217,
+    "used_cycles": 217,
+    "train_cycles": 109,
+    "test_cycles": 108,
+    "rmax": 0.9277805723143716,
+    "training_mean_r_range": [
+      0.21083068633738616,
+      0.6749749691559453
+    ],
+    "training_mean_winding": -1,
+    "guide_plane_half_angle_deg": 44.658073822240894,
+    "guide_plane_rms": 0.12624245320930813,
+    "guide_phase_span_turns_quantiles": [
+      -1.0003027526202395,
+      -0.5290019805602996,
+      -0.5251502875154693,
+      -0.5147166841784282
+    ],
+    "guide_backtracking_fraction_quantiles": [
+      0.0763032190293261,
+      0.8339873234730423,
+      1.6906780827082182,
+      2.9338560131751175
+    ],
+    "isotonic_max_fraction_change_quantiles": [
+      0.011530036300589741,
+      0.21651550394888752,
+      0.39077841857264617,
+      0.6921345816029688
+    ],
+    "uniform_reference_step_cv": 0.02814591766491285
+  }
+}
